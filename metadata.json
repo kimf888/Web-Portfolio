@@ -1,0 +1,6 @@
+{
+  "name": "KAI - Flat Light Tech Portfolio",
+  "description": "An internationalized flat light-tech designer portfolio with fluid micro-interactions, interactive design sandbox, case studies, and multilingual support (EN/ZH).",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

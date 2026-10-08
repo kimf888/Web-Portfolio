@@ -1,0 +1,1538 @@
+import { Project } from '../types';
+
+export const projectsData: Project[] = [
+  {
+    id: 'aura-ai-workspace',
+    title: 'Maxtang Mini PC 系列',
+    tagline: {
+      en: 'A comprehensive miniaturized desktop computing solution covering entry-level silent office setups, multi-display productivity, and high-performance entertainment.',
+      'zh-CN': '一套完整的小型化桌面计算解决方案，覆盖入门静音办公、生产力多屏输出、高性能影音娱乐等多个层级。',
+      'zh-TW': '一套完整的小型化桌面計算解決方案，覆蓋入門靜音辦公、生產力多屏輸出、高性能影音娛樂等多個層級。',
+    },
+    category: 'aigc',
+    categoryLabel: {
+      en: 'AIGC',
+      'zh-CN': 'AIGC',
+      'zh-TW': 'AIGC',
+    },
+    tags: ['Email Newsletter', 'Product Visual', 'New Product Launch', '海外市场', '信息视觉化', '3D Rendering'],
+    year: '2026',
+    client: 'AURA Labs (Silicon Valley)',
+    role: {
+      en: 'Principal Product Designer & Front-End Architect',
+      'zh-CN': '首席产品设计师 & 前端架构师',
+      'zh-TW': '首席產品設計師 & 前端架構師',
+    },
+    thumbnail: 'https://i.ibb.co/hFW4kskK/image.jpg',
+    coverImage: 'https://i.ibb.co/hFW4kskK/image.jpg',
+    featured: true,
+    metrics: [
+      { label: 'Task Completion Rate', value: '+340%' },
+      { label: 'Weekly Active Users', value: '180K+' },
+      { label: 'User Rating', value: '4.9/5' },
+    ],
+    description: {
+      en: `The Maxtang Mini PC series is a compact desktop computing solution covering entry-level silent office setups, multi-screen productivity, and high-performance audio-visual entertainment. Concentrating full PC performance into a small chassis, it caters to home, commercial office, DIY enthusiasts, and small server scenarios.
+
+The product matrix features four main models, uniformly adopting metal casings, rich interfaces, hardware expansion support, and compatibility with Windows and Linux systems.
+
+Fanless Model (Intel N100): Passive fin cooling for zero-noise 7x24 operation. Supports M.2+SATA dual drives, up to 32GB DDR4, and a 2500Mbps Ethernet port. Ideal for soft routers, lightweight servers, and office terminals. Starting at $141.
+
+MTN-FP650 (R7-5800H): Comes standard with 16GB+512GB, built-in WiFi/Bluetooth, and full interfaces. Balances daily office tasks, media playback, and light creation. Suitable for homes and small offices. Priced at $371.
+
+MTN-AL50 (Intel i5/i7): Dual-channel DDR5 up to 64GB, PCIe 4.0 SSD, supporting 4K triple-display output (2×HDMI 2.0 + DP1.4 Type-C). Geared towards multi-window workflows and design drafting in commercial scenarios. Starting at $336.
+
+MTN-FP750 (R7-7735HS): 8-core processor + Radeon 680M integrated graphics, standard 32GB+512GB, supports 4K triple-display output. Smoothly handles HD media, light gaming, and content creation as the flagship all-around model.
+
+Core Advantages: Compact metal body saves space; freely upgradable memory and storage; complete Ethernet, video, USB, and Type-C interfaces; versatile as data servers, routers, entertainment hosts, or office terminals; full tier coverage from low-power entry models to high-performance flagships for different budgets.
+
+The Maxtang Mini PC series achieves full traditional desktop capabilities within a compact chassis, covering various home, commercial, and DIY needs to provide a lightweight and cost-effective desktop computing solution.`,
+      'zh-CN': `Maxtang Mini PC 系列是一套小型化桌面计算解决方案，覆盖入门静音办公、多屏生产力、高性能影音娱乐等层级，将完整 PC 性能浓缩于小巧机身，面向家庭、办公商用、DIY 爱好者及小型服务器场景。
+
+产品矩阵包含四款主力机型，统一采用金属外壳，接口丰富，支持硬件拓展，兼容 Windows 与 Linux 系统。
+
+Fanless 无风扇款（Intel N100）：鳍片被动散热，零噪音 7×24 小时运行。支持 M.2+SATA 双盘位、DDR4 最高 32GB、2500Mbps 网口，适合软路由、轻量服务器、办公终端。起售价 $141。
+
+MTN-FP650（R7-5800H）：标配 16GB+512GB，内置 WiFi / 蓝牙，接口齐全，兼顾日常办公、影音播放与轻度创作，适合家庭及小型办公室。售价 $371。
+
+MTN-AL50（Intel i5/i7）：双通道 DDR5 最高 64GB，PCIe4.0 固态，支持三屏 4K 输出（2×HDMI2.0+DP1.4 Type-C），面向多窗口办公、设计制图等商用场景。起售价 $336。
+
+MTN-FP750（R7-7735HS）：8 核处理器 + Radeon 680M 核显，标配 32GB+512GB，支持 4K 三屏输出，可流畅应对高清影音、轻度游戏与内容创作，为旗舰全能机型。
+
+核心优势：金属机身紧凑省空间；内存硬盘可自由升级；网口、视频、USB、Type-C 接口齐全；可作数据服务器、路由、娱乐主机、办公终端；从入门低功耗到旗舰高性能，全档位覆盖不同预算。
+
+Maxtang 迷你主机系列以紧凑机身实现传统台式机的完整能力，覆盖家用、商用、DIY 多类需求，提供轻量化、高性价比的桌面计算方案。`,
+      'zh-TW': `Maxtang Mini PC 系列是一套小型化桌面計算解決方案，覆蓋入門靜音辦公、多屏生產力、高性能影音娛樂等層級，將完整 PC 性能濃縮於小巧機身，面向家庭、辦公商用、DIY 愛好者及小型服務器場景。
+
+產品矩陣包含四款主力機型，統一採用金屬外殼，接口豐富，支持硬件拓展，兼容 Windows 與 Linux 系統。
+
+Fanless 無風扇款（Intel N100）：鰭片被動散熱，零噪音 7×24 小時運行。支持 M.2+SATA 雙盤位、DDR4 最高 32GB、2500Mbps 網口，適合軟路由、輕量服務器、辦公終端。起售價 $141。
+
+MTN-FP650（R7-5800H）：標配 16GB+512GB，內置 WiFi / 藍牙，接口齊全，兼顧日常辦公、影音播放與輕度創作，適合家庭及小型辦公室。售價 $371。
+
+MTN-AL50（Intel i5/i7）：雙通道 DDR5 最高 64GB，PCIe4.0 固態，支持三屏 4K 輸出（2×HDMI2.0+DP1.4 Type-C），面向多窗口辦公、設計製圖等商用場景。起售價 $336。
+
+MTN-FP750（R7-7735HS）：8 核處理器 + Radeon 680M 核顯，標配 32GB+512GB，支持 4K 三屏輸出，可流暢應對高清影音、輕度遊戲與內容創作，為旗艦全能機型。
+
+核心優勢：金屬機身緊湊省空間；內存硬盤可自由升級；網口、視頻、USB、Type-C 接口齊全；可作數據服務器、路由、娛樂主機、辦公終端；從入門低功耗到旗艦高性能，全檔位覆蓋不同預算。
+
+Maxtang 迷你主機系列以緊湊機身實現傳統台式機的完整能力，覆蓋家用、商用、DIY 多類需求，提供輕量化、高性價比的桌面計算方案。`,
+    },
+    problem: {
+      en: '',
+      'zh-CN': '',
+      'zh-TW': '',
+    },
+    solution: {
+      en: '',
+      'zh-CN': '',
+      'zh-TW': '',
+    },
+    interactivePreviewType: 'ai-prompt',
+    tokens: [
+      { name: 'Canvas Surface', hex: '#F8FAFC', category: 'surface' },
+      { name: 'Card Background', hex: '#FFFFFF', category: 'surface' },
+      { name: 'Electric Tech Blue', hex: '#2563EB', category: 'accent' },
+      { name: 'Node Border Active', hex: '#3B82F6', category: 'primary' },
+      { name: 'High Contrast Slate', hex: '#0F172A', category: 'text' },
+    ],
+    wireframeUrl: 'https://i.ibb.co/hFW4kskK/image.jpg',
+    hiFiUrl: 'https://i.ibb.co/hFW4kskK/image.jpg',
+  },
+  {
+    id: 'nexus-spatial-os',
+    title: '自行车产品三维视觉渲染项目',
+    tagline: {
+      en: 'Centering on bicycle products for 3D modeling and visual rendering, showcasing product structure and design details through different perspectives, shots, and close-ups.',
+      'zh-CN': '以自行车产品为核心进行三维建模与视觉渲染，通过不同视角、景别及局部特写展示产品结构与设计细节。',
+      'zh-TW': '以自行車產品為核心進行三維建模與視覺渲染，通過不同視角、景別及局部特寫展示產品結構與設計細節。',
+    },
+    category: 'independent-site',
+    categoryLabel: {
+      en: 'Independent Site',
+      'zh-CN': '独立站',
+      'zh-TW': '獨立站',
+    },
+    tags: ['3D Rendering', 'Product Visuals', 'Lighting', 'Material Design', 'Photography'],
+    year: '2025',
+    client: 'Bicycle Brand',
+    role: {
+      en: '3D Visual Designer',
+      'zh-CN': '三维视觉设计师',
+      'zh-TW': '三維視覺設計師',
+    },
+    thumbnail: 'https://i.ibb.co/3m0T3bwB/3.jpg',
+    coverImage: 'https://i.ibb.co/3m0T3bwB/3.jpg',
+    additionalImages: ['https://i.ibb.co/1ywxL4d/1.jpg', 'https://i.ibb.co/3yHwSD8f/2.jpg'],
+    featured: true,
+    metrics: [],
+    description: {
+      en: `Taking mountain bike products as the subject, this project involves complete 3D product modeling and visual rendering. The project focuses on the product's shape structure, material details, and sports attributes, systematically showcasing the overall appearance and key structures of the bicycle through different perspectives, shots, and close-ups.
+
+In the overall product display section, the product is rendered from the front side, front three-quarter, rear side, and three-quarter perspectives. Through different angles, the overall design of the frame proportions, wheel structure, front and rear suspension, handlebars, seat, and transmission system is presented, ensuring the product's appearance and structural relationships are fully reflected.
+
+In the detailed product display section, close-ups are further targeted at the core structures of the bicycle, including the frame, front fork, handlebars, wheelset, tires, braking system, transmission system, rear wheel transmission structure, and seat components. Through close-range composition, the product's mechanical structure, material texture, and detail craftsmanship are highlighted, extending the overall visual from pure product display to design expression at the detail level.
+
+The scene representation adopts a clean, studio-style product display environment, constructing a unified visual space with a light gray background, soft ambient light, and a highly reflective ground. Natural reflections at the bottom of the product enhance the sense of space in the image, while soft light-and-dark transitions control the product's silhouette, making the purple, yellow, and black frame color scheme stand out and avoiding interference from complex scenes on the main product subject.
+
+In terms of image composition, the product's proportion and visual center of gravity in the frame are adjusted according to different display purposes: overall displays use a relatively complete product composition to ensure the bicycle's silhouette and structural information are intact; detail displays strengthen the visual impact of the product through local cropping, close-up perspectives, and low-angle shots, making key areas such as the frame, tires, transmission system, and control area the main visual focus of the image.
+
+The entire project revolves around product visual presentation. Through 3D modeling, materials, lighting, camera perspectives, and scene construction, the physical bicycle is transformed into digital product visual assets with commercial display effects. These assets can be applied in various scenarios such as product detail pages, brand official websites, e-commerce platforms, product promotion, and advertising visuals.`,
+      'zh-CN': `以山地自行车产品为对象，进行完整的产品三维建模与视觉渲染表现。项目重点围绕产品本身的造型结构、材质细节及运动属性展开，通过不同视角、景别和局部特写，对自行车的整体外观及关键结构进行系统化展示。
+
+在整体产品展示部分，分别从正侧面、前侧面、后侧面及三分之四视角对产品进行渲染，通过不同角度呈现车架比例、车轮结构、前后避震、车把、座椅及传动系统等整体设计，使产品的外观形态和结构关系能够得到完整体现。
+
+在产品细节展示部分，进一步针对自行车的核心结构进行局部特写，包括车架、前叉、车把、轮组、轮胎、刹车系统、变速系统、后轮传动结构及座椅组件等，通过近距离构图突出产品的机械结构、材质质感和细节工艺，使整体视觉从单纯的产品展示延伸到细节层面的设计表达。
+
+场景表现采用简洁的摄影棚式产品展示环境，以浅灰色背景、柔和的环境光和高反射地面构建统一的视觉空间。通过产品底部的自然倒影增强画面空间感，同时利用柔和的明暗过渡控制产品轮廓，使紫色、黄色与黑色组成的车架配色更加突出，避免复杂场景对产品主体造成干扰。
+
+在画面构图上，根据不同展示目的调整产品在画面中的比例和视觉重心：整体展示采用较完整的产品构图，保证自行车轮廓和结构信息完整；细节展示则通过局部裁切、近距离视角和低景别构图强化产品的视觉冲击力，使车架、轮胎、变速系统及操控区域等关键部位成为画面的主要视觉焦点。
+
+整个项目以产品视觉呈现为核心，通过三维建模、材质、灯光、摄影机视角和场景搭建等方式，将实体自行车转化为具有商业展示效果的数字化产品视觉素材，可应用于产品详情页、品牌官网、电商平台、产品宣传及广告视觉等场景。`,
+      'zh-TW': `以山地自行車產品為對象，進行完整的產品三維建模與視覺渲染表現。項目重點圍繞產品本身的造型結構、材質細節及運動屬性展開，通過不同視角、景別和局部特寫，對自行車的整體外觀及關鍵結構進行系統化展示。
+
+在整體產品展示部分，分別從正側面、前側面、後側面及三分之四視角對產品進行渲染，通過不同角度呈現車架比例、車輪結構、前後避震、車把、座椅及傳動系統等整體設計，使產品的外觀形態和結構關係能夠得到完整體現。
+
+在產品細節展示部分，進一步針對自行車的核心結構進行局部特寫，包括車架、前叉、車把、輪組、輪胎、剎車系統、變速系統、後輪傳動結構及座椅組件等，通過近距離構圖突出產品的機械結構、材質質感和細節工藝，使整體視覺從單純的產品展示延伸到細節層面的設計表達。
+
+場景表現採用簡潔的攝影棚式產品展示環境，以淺灰色背景、柔和的環境光和高反射地面構建統一的視覺空間。通過產品底部的自然倒影增強畫面空間感，同時利用柔和的明暗過渡控制產品輪廓，使紫色、黃色與黑色組成的車架配色更加突出，避免複雜場景對產品主體造成干擾。
+
+在畫面構圖上，根據不同展示目的調整產品在畫面中的比例和視覺重心：整體展示採用較完整的產品構圖，保證自行車輪廓和結構信息完整；細節展示則通過局部裁切、近距離視角和低景別構圖強化產品的視覺衝擊力，使車架、輪胎、變速系統及操控區域等關鍵部位成為畫面的主要視覺焦點。
+
+整個項目以產品視覺呈現為核心，通過三維建模、材質、燈光、攝影機視角和場景搭建等方式，將實體自行車轉化為具有商業展示效果的數字化產品視覺素材，可應用於產品詳情頁、品牌官網、電商平台、產品宣傳及廣告視覺等場景。`,
+    },
+    problem: {
+      en: '',
+      'zh-CN': '',
+      'zh-TW': '',
+    },
+    solution: {
+      en: '',
+      'zh-CN': '',
+      'zh-TW': '',
+    },
+    interactivePreviewType: 'spatial-toggle',
+    tokens: [
+      { name: 'Spatial Ice Gray', hex: '#F1F5F9', category: 'surface' },
+      { name: 'Pure White Floating', hex: '#FFFFFF', category: 'surface' },
+      { name: 'Cyan Tech Accent', hex: '#0EA5E9', category: 'accent' },
+      { name: 'Wireframe Stroke', hex: '#CBD5E1', category: 'primary' },
+      { name: 'Deep Onyx Text', hex: '#020617', category: 'text' },
+    ],
+    wireframeUrl: 'https://i.ibb.co/1ywxL4d/1.jpg',
+    hiFiUrl: 'https://i.ibb.co/1ywxL4d/1.jpg',
+  },
+  {
+    id: 'kinetic-fintech-platform',
+    title: '公司产品手册',
+    tagline: {
+      en: 'A high-frequency quantitative trading platform designed with zero visual noise and instant data visualization.',
+      'zh-CN': '无视觉杂音的高频量化交易终端，专注极速数据流可视化与毫秒级执行。',
+      'zh-TW': '無視覺雜音的高頻量化交易終端，專注極速數據流可視化與毫秒級執行。',
+    },
+    category: 'amazon',
+    categoryLabel: {
+      en: 'Amazon',
+      'zh-CN': '亚马逊',
+      'zh-TW': '亞馬遜',
+    },
+    tags: ['FinTech', 'Data Visualization', 'D3.js', 'High Density UI', 'Design System'],
+    year: '2025',
+    client: 'Kinetic Capital Corp',
+    role: {
+      en: 'Lead UI/UX Designer',
+      'zh-CN': '首席 UI/UX 设计师',
+      'zh-TW': '首席 UI/UX 設計師',
+    },
+    thumbnail: 'https://i.ibb.co/q30v969j/1.jpg',
+    coverImage: 'https://i.ibb.co/q30v969j/1.jpg',
+    iframeUrl: 'https://my.feishu.cn/file/QRwXb9Xefo7lZbx0jO7c4Fv1nef?from=from_copylink',
+    featured: true,
+    metrics: [
+      { label: 'Order Execution Latency', value: '< 12ms' },
+      { label: 'Trader Error Reduction', value: '-42%' },
+      { label: 'Daily Volume Handled', value: '$2.4B+' },
+    ],
+    description: {
+      en: 'KINETIC brings a revolutionary light-theme aesthetic to financial trading, replacing stressful chaotic dark screens with precise flat metric blocks and ergonomic color signals.',
+      'zh-CN': 'KINETIC 为金融交易领域带来颠覆性的浅色极简体验，用清晰的卡片阵列与符合人体工学的淡雅信号色替换令交易员窒息的混乱深色满屏。',
+      'zh-TW': 'KINETIC 為金融交易領域帶來顛覆性的淺色極簡體驗，用清晰的卡片陣列與符合人體工學的淡雅信號色替換令交易員窒息的混亂深色滿屏。',
+    },
+    problem: {
+      en: 'Traditional financial terminals cause eye strain during 10-hour shifts due to harsh red/green neon contrast and bloated menus.',
+      'zh-CN': '传统交易终端菜单臃肿，强烈的荧光红绿对比在长时间盯盘时导致严重的眼部疲劳与决策延误。',
+      'zh-TW': '傳統交易終端菜單臃腫，強烈的螢光紅綠對比在長時間盯盤時導致嚴重的眼部疲勞與決策延誤。',
+    },
+    solution: {
+      en: 'Designed custom sparkline micro-charts, ergonomic jade green and soft crimson indicators, floating action shortcuts, and dense flat modular tables.',
+      'zh-CN': '设计专有微型趋势线图表、低饱和翡翠绿与柔和绯红微指示器、浮动快捷指令与高密度扁平模组表格。',
+      'zh-TW': '設計專有微型趨勢線圖表、低飽和翡翠綠與柔和緋紅微指示器、浮動快捷指令與高密度扁平模組表格。',
+    },
+    interactivePreviewType: 'fintech-chart',
+    tokens: [
+      { name: 'Flat Surface Base', hex: '#FAFAFA', category: 'surface' },
+      { name: 'Jade Positive Accent', hex: '#10B981', category: 'accent' },
+      { name: 'Coral Negative Accent', hex: '#F43F5E', category: 'accent' },
+      { name: 'Indigo Metric Highlight', hex: '#4F46E5', category: 'primary' },
+      { name: 'Deep Gray Header', hex: '#18181B', category: 'text' },
+    ],
+    wireframeUrl: 'https://picsum.photos/seed/fintechwireframe/1200/800',
+    hiFiUrl: 'https://picsum.photos/seed/fintechterm/1200/800',
+  },
+  {
+    id: 'prism-brand-system',
+    title: '大唐计算机企业产品手册设计',
+    tagline: {
+      en: 'A comprehensive visual presentation encompassing corporate brand image, development history, technological R&D, manufacturing, industry applications, and the core product system.',
+      'zh-CN': '围绕企业品牌形象、发展历程、技术研发、生产制造、行业应用以及核心产品体系进行完整的视觉呈现。',
+      'zh-TW': '圍繞企業品牌形象、發展歷程、技術研發、生產製造、行業應用以及核心產品體系進行完整的視覺呈現。',
+    },
+    category: 'graphic-design',
+    categoryLabel: {
+      en: 'Graphic Design',
+      'zh-CN': '平面设计',
+      'zh-TW': '平面設計',
+    },
+    tags: ['Brand Identity', 'Layout Design', 'Typography', 'Visual Presentation', 'Product Brochure'],
+    year: '2025',
+    client: '深圳市大唐计算机有限公司 (Datang Computer)',
+    role: {
+      en: 'Lead Graphic & Brand Designer',
+      'zh-CN': '主导平面与品牌设计师',
+      'zh-TW': '主導平面與品牌設計師',    },
+    thumbnail: 'https://i.ibb.co/5WHbNrcR/T-1.jpg',
+    coverImage: 'https://i.ibb.co/5WHbNrcR/T-1.jpg',
+    iframeUrl: 'https://my.feishu.cn/file/NNbCbUFrmoqPP7xc6CecOz3Lnwf?from=from_copylink',
+    metrics: [
+      { label: 'Components Standardized', value: '120+' },
+      { label: 'Engineering Time Saved', value: '45%' },
+      { label: 'Brand Compliance', value: '100%' },
+    ],
+    description: {
+      en: `This project involves the design of the corporate product brochure for Shenzhen Datang Computer Co., Ltd., focusing primarily on a comprehensive visual presentation of the corporate brand image, development history, technology R&D, manufacturing, industry applications, and core product system. Founded in 2009, Datang Computer is a high-tech enterprise integrating R&D, production, sales, and service of industry-specific computers and consumer portable computing devices. Its products cover multiple segments including embedded industrial motherboards, embedded IPCs, OPS, embedded barebone systems, industrial hosts, Mini PCs, and all-in-one PCs, providing customized, high-performance, and reliable computing products and solutions to global customers.
+
+Rather than focusing purely on product display, the project starts with establishing brand awareness. It reorganizes the company's development timeline from its inception to the present, technological accumulation, R&D team, manufacturing systems, quality control, and industry layout. It then links corporate capabilities with specific products to form a complete content logic of "Corporate Strength – Technical Capability – Product System – Industry Application."
+
+In the corporate introduction section, basic brand recognition is established through information on company positioning, business scope, global clientele, R&D team, and enterprise scale. Datang possesses over 15 years of industry experience with more than 1,500 global customers. It continually conducts independent R&D while engaging in industry-university-research cooperation with Beihang University. The R&D team comprises numerous senior R&D engineers and product designers with extensive industry experience, providing sustained support for corporate product development and technical iteration.
+
+The corporate development history section organizes key milestones from 2009 to 2024 into a timeline. From early low-power processor platform motherboards and fanless industrial hosts to the continuous rollout of Intel and AMD platform products, AI industrial cameras, embedded PCs, single-board computers, and IXH series fanless industrial box PCs, the enterprise's development process is combined with product and technological iterations. This allows the company's growth to be visually presented through the advancement of its products and technology.
+
+R&D capability is a crucial component of the entire product brochure. The project modularizes corporate R&D services, covering industrial system design, thermal design, product simulation, 3D CAD motherboard modeling, software and BIOS technical support, motherboard modification, subsystem integration, ruggedization services, extended temperature screening, and product lifecycle management. Through a systematic presentation of these capabilities, it highlights that the enterprise not only possesses standard product R&D abilities but can also provide customized products and engineering support tailored to different customer needs.
+
+The manufacturing capability and quality system section focuses on showcasing the enterprise's production environment, automated manufacturing equipment, and quality control workflows. Datang operates a modern production and dust-free testing workshop spanning over 4,000 square meters, equipped with precision production lines alongside various R&D, testing, and automated manufacturing equipment, forming a comprehensive manufacturing system from production to quality management. The product brochure further displays dimensions such as raw material selection, production processes, in-process testing, and final outgoing inspections, combined with certification information like ISO9001, RoHS, FCC, CE, and 3C, reinforcing the brand's professional image regarding product quality, reliability, and international market standards.
+
+In the product system display section, products are categorized according to the actual corporate product structure, unifying diverse lines such as industrial motherboards, ATX motherboards, Mini ITX motherboards, single-board computers, core boards, custom boards, as well as industrial computers, embedded devices, and Mini PCs. Addressing the complex and parameter-heavy nature of hardware product information, technical specs—including product model, processor, memory, storage, display interfaces, power supply, dimensions, and temperature ranges—are structurally organized. Through a unified information hierarchy and visual presentation format, professional hardware product data becomes much more intuitive and readable.
+
+Furthermore, the project does not confine the products to isolated hardware displays but extends into industry applications and solutions. Combining the enterprise's product capabilities, it integrates content across application vectors such as IoT, energy management, surveillance, data storage, communications, network security, digital signage, edge computing, industrial automation, intelligent transportation, self-service kiosks, in-vehicle computing, and machine vision. Extending from the product itself to actual usage scenarios helps users understand the application value of different computing products in specific industries.
+
+Additionally, the product brochure reinforces the brand's global positioning and industry influence through information regarding long-term strategic partnerships with industry leaders like Intel and AMD, as well as participation in international trade shows such as CES, Integrated Systems Europe, Embedded World, India Expo Convergence, and COMPUTEX.
+
+Design Goals
+
+The core of this project is not simply listing corporate information and product parameters. Instead, through information architecture, product visuals, typography systems, and brand content integration, it transforms a technology-driven, information-dense industrial computer enterprise into a much clearer, more professional, and tech-forward brand visual expression.
+
+The overall content uses the enterprise as the main thread and the products as the core. It builds brand depth through the development history, establishes professional trust through R&D and manufacturing capabilities, and demonstrates actual business competence through the product matrix and industry applications. Ultimately, this creates a comprehensive product brochure that seamlessly blends corporate promotion, brand display, product introduction, and business communication functionalities.`,
+      'zh-CN': `本项目为深圳市大唐计算机有限公司企业产品手册设计，主要围绕企业品牌形象、发展历程、技术研发、生产制造、行业应用以及核心产品体系进行完整的视觉呈现。大唐计算机成立于2009年，是一家集行业专用计算机及消费级便携式计算设备研发、生产、销售与服务于一体的高新技术企业，产品覆盖嵌入式工业主板、嵌入式工控机、OPS、嵌入式准系统、工业主机、Mini PC、一体机等多个产品方向，并面向全球客户提供定制化、高性能及可靠的计算产品与解决方案。
+
+项目并非单纯以产品展示为核心，而是从企业品牌认知建立出发，对公司从成立至今的发展历程、技术积累、研发团队、制造体系、质量控制及行业布局进行重新梳理，再将企业能力与具体产品建立关联，形成“企业实力—技术能力—产品体系—行业应用”的完整内容逻辑。
+
+在企业介绍部分，通过公司定位、业务范围、全球客户、研发团队及企业规模等信息，建立品牌基础认知。大唐拥有超过15年的行业经验，全球客户超过1500家，并持续进行自主研发，同时与北京航空航天大学开展产学研合作。公司研发团队拥有多名具有多年行业经验的高级研发工程师及产品设计团队，为企业产品开发和技术迭代提供持续支持。
+
+在企业发展历程部分，对2009年至2024年的重要发展节点进行时间轴整理，从早期低功耗处理器平台主板、无风扇工控主机，到后续Intel、AMD平台产品、AI工业相机、嵌入式PC、单板计算机以及IXH系列无风扇工业箱式PC等产品的持续推出，将企业的发展过程与产品技术迭代结合起来，使企业成长过程能够通过产品和技术的发展直观呈现。
+
+研发能力是整个产品手册中的重要内容之一。项目将企业研发服务进行模块化整理，包括工业系统设计、散热设计、产品模拟、3D CAD主板模型设计、软件及BIOS技术支持、主板修改、子系统集成、加固服务、扩展温度筛选以及产品生命周期管理等内容。通过对研发能力的系统呈现，突出企业不仅具备标准产品研发能力，同时能够针对不同客户需求提供定制化产品及工程技术支持。
+
+在制造能力与品质体系部分，则重点展示企业的生产环境、自动化生产设备及质量控制流程。大唐拥有4000余平方米现代化生产及无尘测试车间，并配置精密生产线及多种研发、检测和自动化制造设备，形成从生产、检测到质量管理的完整制造体系。产品手册进一步从原材料选择、生产工艺、过程检测以及出厂检验等维度进行展示，并结合ISO9001、RoHS、FCC、CE、3C等认证信息，强化品牌在产品品质、可靠性和国际市场标准方面的专业形象。
+
+在产品体系展示部分，根据企业实际产品结构进行分类，将工业主板、ATX主板、Mini ITX主板、单板计算机、核心板及定制板，以及工业计算机、嵌入式设备、Mini PC等不同产品进行统一规划。针对硬件产品信息复杂、参数较多的特点，将产品型号、处理器、内存、存储、显示接口、电源、尺寸、温度等技术参数进行结构化整理，通过统一的信息层级和产品视觉展示方式，让专业的硬件产品信息更加直观、易读。
+
+同时，项目并没有将产品局限于单独的硬件展示，而是进一步延伸至行业应用与解决方案。结合企业产品能力，对物联网、能源管理、监控、数据存储、通信、网络安全、数字标牌、边缘计算、工业自动化、智能交通、自助服务终端、车载计算及机器视觉等应用方向进行内容整合，从产品本身进一步延伸到实际使用场景，帮助用户理解不同计算产品在具体行业中的应用价值。
+
+此外，产品手册还通过企业与Intel、AMD等行业企业的长期战略合作，以及CES、Integrated Systems Europe、Embedded World、India Expo Convergence、COMPUTEX等国际行业展会的信息，进一步强化品牌的全球化定位与行业影响力。
+
+设计目标
+
+本项目的核心并不是简单罗列企业信息和产品参数，而是通过信息架构、产品视觉、版式系统和品牌内容整合，将一个技术型、信息密度较高的工业计算机企业转化为更加清晰、专业且具有科技感的品牌视觉表达。
+
+整体内容以企业为主线，以产品为核心，通过发展历程建立品牌厚度，以研发和制造能力建立专业信任，再通过产品矩阵及行业应用体现企业的实际业务能力，最终形成一套兼具企业宣传、品牌展示、产品介绍及商务沟通功能的完整产品手册。`,
+      'zh-TW': `本項目為深圳市大唐計算機有限公司企業產品手冊設計，主要圍繞企業品牌形象、發展歷程、技術研發、生產製造、行業應用以及核心產品體系進行完整的視覺呈現。大唐計算機成立於2009年，是一家集行業專用計算機及消費級便攜式計算設備研發、生產、銷售與服務於一體的高新技術企業，產品覆蓋嵌入式工業主板、嵌入式工控機、OPS、嵌入式準系統、工業主機、Mini PC、一體機等多個產品方向，並面向全球客戶提供定制化、高性能及可靠的計算產品與解決方案。
+
+項目並非單純以產品展示為核心，而是從企業品牌認知建立出發，對公司從成立至今的發展歷程、技術積累、研發團隊、製造體系、質量控制及行業佈局進行重新梳理，再將企業能力與具體產品建立關聯，形成“企業實力—技術能力—產品體系—行業應用”的完整內容邏輯。
+
+在企業介紹部分，通過公司定位、業務範圍、全球客戶、研發團隊及企業規模等信息，建立品牌基礎認知。大唐擁有超過15年的行業經驗，全球客戶超過1500家，並持續進行自主研發，同時與北京航空航天大學開展產學研合作。公司研發團隊擁有多名具有多年行業經驗的高級研發工程師及產品設計團隊，為企業產品開發和技術迭代提供持續支持。
+
+在企業發展歷程部分，對2009年至2024年的重要發展節點進行時間軸整理，從早期低功耗處理器平台主板、無風扇工控主機，到後續Intel、AMD平台產品、AI工業相機、嵌入式PC、單板計算機以及IXH系列無風扇工業箱式PC等產品的持續推出，將企業的發展過程與產品技術迭代結合起來，使企業成長過程能夠通過產品和技術的發展直觀呈現。
+
+研發能力是整個產品手冊中的重要內容之一。項目將企業研發服務進行模塊化整理，包括工業系統設計、散熱設計、產品模擬、3D CAD主板模型設計、軟件及BIOS技術支持、主板修改、子系統集成、加固服務、擴展溫度篩選以及產品生命周期管理等內容。通過對研發能力的系統呈現，突出企業不僅具備標準產品研發能力，同時能夠針對不同客戶需求提供定制化產品及工程技術支持。
+
+在製造能力與品質體系部分，則重點展示企業的生產環境、自動化生產設備及質量控制流程。大唐擁有4000餘平方米現代化生產及無塵測試車間，並配置精密生產線及多種研發、檢測和自動化製造設備，形成從生產、檢測到質量管理的完整製造體系。產品手冊進一步從原材料選擇、生產工藝、過程檢測以及出廠檢驗等維度進行展示，並結合ISO9001、RoHS、FCC、CE、3C等認證信息，強化品牌在產品品質、可靠性和國際市場標準方面的專業形象。
+
+在產品體系展示部分，根據企業實際產品結構進行分類，將工業主板、ATX主板、Mini ITX主板、單板計算機、核心板及定制板，以及工業計算機、嵌入式設備、Mini PC等不同產品進行統一規劃。針對硬件產品信息複雜、參數較多的特點，將產品型號、處理器、內存、存儲、顯示接口、電源、尺寸、溫度等技術參數進行結構化整理，通過統一的信息層級和產品視覺展示方式，讓專業的硬件產品信息更加直觀、易讀。
+
+同時，項目並沒有將產品局限於單獨的硬件展示，而是進一步延伸至行業應用與解決方案。結合企業產品能力，對物聯網、能源管理、監控、數據存儲、通信、網絡安全、數字標牌、邊緣計算、工業自動化、智能交通、自助服務終端、車載計算及機器視覺等應用方向進行內容整合，從產品本身進一步延伸到實際使用場景，幫助用戶理解不同計算產品在具體行業中的應用價值。
+
+此外，產品手冊還通過企業與Intel、AMD等行業企業的長期戰略合作，以及CES、Integrated Systems Europe、Embedded World、India Expo Convergence、COMPUTEX等國際行業展會的信息，進一步強化品牌的全球化定位與行業影響力。
+
+設計目標
+
+本項目的核心並不是簡單羅列企業信息和產品參數，而是通過信息架構、產品視覺、版式系統和品牌內容整合，將一個技術型、信息密度較高的工業計算機企業轉化為更加清晰、專業且具有科技感的品牌視覺表達。
+
+整體內容以企業為主線，以產品為核心，通過發展歷程建立品牌厚度，以研發和製造能力建立專業信任，再通過產品矩陣及行業應用體現企業的實際業務能力，最終形成一套兼具企業宣傳、品牌展示、產品介紹及商務溝通功能的完整產品手冊。`,
+    },
+    problem: {
+      en: 'Disparate component implementations across web and mobile caused brand fragmentation, inconsistent button spacing, and high maintenance costs.',
+      'zh-CN': '各产品线组件开发割裂，导致品牌标识零碎、按纽与字号边距不一，维护成本居高不下。',
+      'zh-TW': '各產品線組件開發割裂，導致品牌標識零碎、按鈕與字號邊距不一，維護成本居高不下。',
+    },
+    solution: {
+      en: 'Engineered a unified light flat component library with automated WCAG contrast checks, CSS variable tokens, and interactive storybook documentation.',
+      'zh-CN': '构建统一的浅色扁平组件库，集成自动化对比度校验、CSS 变量令牌以及直观的交互文档系统。',
+      'zh-TW': '構建統一的淺色扁平組件庫，集成自動化對比度校驗、CSS 變量令牌以及直觀的交互文檔系統。',
+    },
+    interactivePreviewType: 'color-system',
+    tokens: [
+      { name: 'Background Canvas', hex: '#F9FAFB', category: 'surface' },
+      { name: 'System Emerald Accent', hex: '#059669', category: 'accent' },
+      { name: 'System Violet Accent', hex: '#7C3AED', category: 'accent' },
+      { name: 'Border Slate', hex: '#E2E8F0', category: 'primary' },
+      { name: 'Primary Body Text', hex: '#111827', category: 'text' },
+    ],
+    wireframeUrl: 'https://picsum.photos/seed/prismwireframe/1200/800',
+    additionalImages: ['https://i.ibb.co/TMhHvd4k/1-01.jpg', 'https://i.ibb.co/5WHbNrcR/T-1.jpg'],
+    hiFiUrl: 'https://picsum.photos/seed/prismdesignsys/1200/800',
+  },
+  {
+    id: 'lumen-health-mobile',
+    title: '大唐计算机产品场景应用',
+    tagline: {
+      en: 'Establishing a unified product visual display system for Datang Computer devices through product rendering and multi-scenario construction.',
+      'zh-CN': '围绕大唐计算机旗下计算设备，通过产品渲染与多场景构建，建立统一的产品视觉展示体系。',
+      'zh-TW': '圍繞大唐計算機旗下計算設備，通過產品渲染與多場景構建，建立統一的產品視覺展示體系。',
+    },
+    category: 'independent-site',
+    categoryLabel: {
+      en: '3D & Visuals',
+      'zh-CN': '3D 视觉',
+      'zh-TW': '3D 視覺',
+    },
+    tags: ['3D Rendering', 'Scene Design', 'Product Visuals', 'Lighting', 'CGI'],
+    year: '2024',
+    client: 'Datang Computer (大唐计算机)',
+    role: {
+      en: '3D Visual Designer',
+      'zh-CN': '三维视觉设计师',
+      'zh-TW': '三維視覺設計師',
+    },    thumbnail: 'https://i.ibb.co/whVK8ZW0/4.jpg',
+    coverImage: 'https://i.ibb.co/tT7gMMXF/1.jpg',
+    metrics: [
+      { label: 'App Store Rating', value: '4.9★' },
+      { label: 'Daily Log Retention', value: '78%' },
+      { label: 'EHR Sync Accuracy', value: '99.9%' },
+    ],
+    description: {
+      en: `This project centers on the visual product design for Datang Computer's Mini PCs, embedded computers, and industrial computing devices. Through product rendering, scene construction, and multi-scenario application visuals, it establishes a unified product display system.
+
+The core objective of the project is to address two issues in the visual expression of traditional industrial computer products: first, the products themselves have strong technical attributes, making their appearance and functional information relatively rational; second, there is a lack of a unified visual language across different product models and application scenarios. Therefore, during the design process, the product itself is treated as the visual subject, extended by combining different usage scenarios. Through materials, lighting, spatial structure, and color atmosphere, the technological attributes of the products are enhanced while maintaining accurate presentation of the product's appearance, structure, and interface details.
+
+Based on the positioning and usage environment of different products, a variety of product application scenarios were established, including:
+
+Industrial / Commercial Scenarios: Dominated by white and light gray spaces, reflecting an industrial technological feel through architectural structures, three-dimensional platforms, and linear textures to highlight the product's professional attributes.
+Office Scenarios: Combining the Mini PC with monitors, keyboards, mice, and other equipment to simulate a real desktop office environment, reinforcing the product's application attributes in daily work.
+Entertainment / Gaming Scenarios: Utilizing dark environments and purple ambient lighting, placing the product within monitor, game screen, and RGB lighting environments to highlight the Mini PC's entertainment and high-performance computing attributes.
+Home / Life Scenarios: Softening the sense of distance of industrial equipment through more restrained indoor spaces, desktops, and home elements, presenting a more lifestyle-oriented visual image for the product.`,
+      'zh-CN': `本项目围绕大唐计算机旗下 Mini PC、嵌入式计算机及工业计算设备展开产品视觉设计，通过产品渲染、场景构建及多场景应用视觉，建立统一的产品展示体系。
+
+项目的核心目标是解决传统工业计算机产品在视觉表达上的两个问题：一是产品本身具有较强的技术属性，外观和功能信息相对理性；二是不同产品型号、不同应用场景之间缺乏统一的视觉语言。因此在设计过程中，以产品本身为视觉主体，结合不同使用场景进行延展，通过材质、灯光、空间结构和色彩氛围强化产品的科技属性，同时保持产品外观、结构及接口细节的准确呈现。
+
+根据不同产品的定位和使用环境，建立了多种产品应用场景，包括：
+
+工业 / 商业场景：以白色、浅灰色空间为主，通过建筑结构、立体平台和线性纹理体现工业科技感，突出产品的专业属性。
+办公场景：将Mini PC与显示器、键盘、鼠标等设备结合，模拟真实桌面办公环境，强化产品在日常工作中的应用属性。
+娱乐 / 游戏场景：采用深色环境及紫色氛围光，将产品置于显示器、游戏画面和RGB灯光环境中，突出Mini PC的娱乐及高性能计算属性。
+家庭 / 生活场景：通过更加克制的室内空间、桌面及家居元素弱化工业设备的距离感，使产品呈现更加生活化的视觉形象。`,
+      'zh-TW': `本項目圍繞大唐計算機旗下 Mini PC、嵌入式計算機及工業計算設備展開產品視覺設計，通過產品渲染、場景構建及多場景應用視覺，建立統一的產品展示體系。
+
+項目的核心目標是解決傳統工業計算機產品在視覺表達上的兩個問題：一是產品本身具有較強的技術屬性，外觀和功能信息相對理性；二是不同產品型號、不同應用場景之間缺乏統一的視覺語言。因此在設計過程中，以產品本身為視覺主體，結合不同使用場景進行延展，通過材質、燈光、空間結構和色彩氛圍強化產品的科技屬性，同時保持產品外觀、結構及接口細節的準確呈現。
+
+根據不同產品的定位和使用環境，建立了多種產品應用場景，包括：
+
+工業 / 商業場景：以白色、淺灰色空間為主，通過建築結構、立體平台和線性紋理體現工業科技感，突出產品的專業屬性。
+辦公場景：將Mini PC與顯示器、鍵盤、鼠標等設備結合，模擬真實桌面辦公環境，強化產品在日常工作中的應用屬性。
+娛樂 / 遊戲場景：採用深色環境及紫色氛圍光，將產品置於顯示器、遊戲畫面和RGB燈光環境中，突出Mini PC的娛樂及高性能計算屬性。
+家庭 / 生活場景：通過更加克制的室內空間、桌面及家居元素弱化工業設備的距離感，使產品呈現更加生活化的視覺形象。`,
+    },
+
+    problem: {
+      en: '',
+      'zh-CN': '',
+      'zh-TW': '',
+    },
+    solution: {
+      en: '',
+      'zh-CN': '',
+      'zh-TW': '',
+    },
+    interactivePreviewType: 'ai-prompt',
+    tokens: [
+      { name: 'Soft Health Surface', hex: '#F0F9FF', category: 'surface' },
+      { name: 'Sky Cyan Accent', hex: '#0284C7', category: 'accent' },
+      { name: 'Mint Health Positive', hex: '#10B981', category: 'accent' },
+      { name: 'Slate Soft Border', hex: '#E0F2FE', category: 'primary' },
+      { name: 'Teal Deep Text', hex: '#0F172A', category: 'text' },
+    ],
+    wireframeUrl: 'https://i.ibb.co/tT7gMMXF/1.jpg',
+    hiFiUrl: 'https://i.ibb.co/tT7gMMXF/1.jpg',
+  },
+  {
+    id: 'cyber-kinetic-branding',
+    title: '产品白底渲染',
+    tagline: {
+      en: 'Establishing a unified 3D product visual display system for Datang Computer industrial and Mini PCs.',
+      'zh-CN': '通过统一的建模与渲染语言，为大唐计算机旗下硬件产品建立完整的三维视觉展示体系。',
+      'zh-TW': '通過統一的建模與渲染語言，為大唐計算機旗下硬件產品建立完整的三維視覺展示體系。',
+    },
+    category: 'independent-site',
+    categoryLabel: {
+      en: '3D & Visuals',
+      'zh-CN': '3D 视觉',
+      'zh-TW': '3D 視覺',
+    },
+    tags: ['3D Modeling', 'Product Rendering', 'Lighting', 'Datang Computer'],
+    year: '2024',
+    client: 'Datang Computer (大唐计算机)',
+    role: {
+      en: '3D Visual Designer',
+      'zh-CN': '三维视觉设计师',
+      'zh-TW': '三維視覺設計師',
+    },
+    thumbnail: 'https://i.ibb.co/R4jb3T6z/2.jpg',
+    coverImage: 'https://i.ibb.co/R4jb3T6z/2.jpg',
+    metrics: [
+      { label: 'Awwwards Site of the Day', value: 'SOTD Winner' },
+      { label: 'Brand Impressions', value: '3.2M+' },
+      { label: 'Social Engagement', value: '+510%' },
+    ],
+    description: {
+      en: `This project focuses on the 3D visual product representation of Datang Computer's industrial computers, embedded computers, and Mini PCs. By uniformly designing the modeling, materials, lighting, and rendering angles of different product models, a complete product visual display system is established.
+
+The project involves computing devices of various forms, including industrial computers with external antennas, fanless industrial hosts, and Mini PCs of different sizes. Due to significant differences in product structures, interfaces, cooling methods, and usage scenarios, the design process primarily focuses on the authenticity of product structures, material performance, and hardware detail presentation. A unified rendering language is used to enhance visual consistency across different products.
+
+Based on the actual external structure of each product, 3D restoration of details such as body proportions, interface layouts, cooling structures, and antennas is performed.
+
+Specifically, the fanless industrial computers highlight the large-area fin-style cooling structure on the top, reinforcing the metallic material and industrial attributes of the product through light and shadow performance from various angles. The Mini PC products focus on displaying the clean structure of the body, rounded corner designs, front and rear interfaces, and side cooling vents, enabling users to intuitively understand the product's appearance and functional layout.
+
+In terms of product display angles, more suitable perspectives are chosen based on different product structures to respectively highlight:
+
+Overall product appearance and body proportions
+Front functional interface and button layout
+Rear expansion interfaces and connectivity
+Top cooling structure
+Side cooling vents and industrial structural details
+Antenna and special hardware configurations
+
+Through product rendering from multiple angles, the products not only maintain realistic structural displays but also achieve more professional commercial visual effects.`,
+      'zh-CN': `本项目围绕大唐计算机旗下工业计算机、嵌入式计算机及 Mini PC 产品进行产品三维视觉表现，通过对不同型号产品的建模、材质、灯光及渲染角度进行统一设计，建立完整的产品视觉展示体系。
+
+项目涉及多种不同形态的计算设备，包括带外置天线的工业计算机、无风扇散热工控主机以及不同尺寸规格的 Mini PC。由于产品在结构、接口、散热方式及使用场景上存在较大差异，因此在设计过程中重点围绕产品结构真实性、材质表现及硬件细节展示展开，通过统一的渲染语言提升不同产品之间的视觉一致性。
+
+针对每款产品的实际外观结构，对产品机身比例、接口布局、散热结构及天线等细节进行三维还原。
+
+其中，无风扇工业计算机重点突出顶部大面积的鳍片式散热结构，通过不同角度的光影表现强化金属材质及产品的工业属性；Mini PC 产品则重点展示机身的简洁结构、圆角设计、前后接口以及侧面的散热开孔，使用户能够更直观地了解产品的外观与功能布局。
+
+在产品展示角度上，根据不同产品结构选择更适合的视角，分别突出：
+
+产品整体外观及机身比例
+正面功能接口与按键布局
+背部扩展接口及连接能力
+顶部散热结构
+侧面散热开孔及工业结构细节
+天线及特殊硬件配置
+
+通过多个角度的产品渲染，使产品在保持真实结构展示的同时，也具备更加专业的商业视觉效果。`,
+      'zh-TW': `本項目圍繞大唐計算機旗下工業計算機、嵌入式計算機及 Mini PC 產品進行產品三維視覺表現，通過對不同型號產品的建模、材質、燈光及渲染角度進行統一設計，建立完整的產品視覺展示體系。
+
+項目涉及多種不同形態的計算設備，包括帶外置天線的工業計算機、無風扇散熱工控主機以及不同尺寸規格的 Mini PC。由於產品在結構、接口、散熱方式及使用場景上存在較大差異，因此在設計過程中重點圍繞產品結構真實性、材質表現及硬件細節展示展開，通過統一的渲染語言提升不同產品之間的視覺一致性。
+
+針對每款產品的實際外觀結構，對產品機身比例、接口佈局、散熱結構及天線等細節進行三維還原。
+
+其中，無風扇工業計算機重點突出頂部大面積的鰭片式散熱結構，通過不同角度的光影表現強化金屬材質及產品的工業屬性；Mini PC 產品則重點展示機身的簡潔結構、圓角設計、前後接口以及側面的散熱開孔，使用戶能夠更直觀地了解產品的外觀與功能佈局。
+
+在產品展示角度上，根據不同產品結構選擇更適合的視角，分別突出：
+
+產品整體外觀及機身比例
+正面功能接口與按鍵佈局
+背部擴展接口及連接能力
+頂部散熱結構
+側面散熱開孔及工業結構細節
+天線及特殊硬件配置
+
+通過多個角度的產品渲染，使產品在保持真實結構展示的同時，也具備更加專業的商業視覺效果。`,
+    },
+    problem: {
+      en: '',
+      'zh-CN': '',
+      'zh-TW': '',
+    },
+    solution: {
+      en: '',
+      'zh-CN': '',
+      'zh-TW': '',
+    },
+    interactivePreviewType: 'spatial-toggle',
+    tokens: [
+      { name: 'Crisp Studio Gray', hex: '#F3F4F6', category: 'surface' },
+      { name: 'Electric Cobalt', hex: '#1D4ED8', category: 'accent' },
+      { name: 'Pure White Card', hex: '#FFFFFF', category: 'surface' },
+      { name: 'System Border 1px', hex: '#E5E7EB', category: 'primary' },
+      { name: 'Ultra Slate Black', hex: '#000000', category: 'text' },
+    ],
+    wireframeUrl: 'https://i.ibb.co/0j7X9d0G/1.jpg',
+    hiFiUrl: 'https://i.ibb.co/0j7X9d0G/1.jpg',
+  },,
+  {
+    id: 'placeholder-1',
+    title: '二合一充电露营手提灯',
+    tagline: {
+      en: 'A multifunctional outdoor lighting product combining a high-intensity searchlight with a panoramic camping light, featuring dual Type-C and hand-crank power.',
+      'zh-CN': '集强光探照手电与全景露营灯于一体的多功能户外照明产品，兼顾 Type-C 充电与手摇应急发电双重供电。',
+      'zh-TW': '集強光探照手電與全景露營燈於一體的多功能戶外照明產品，兼顧 Type-C 充電與手搖應急發電雙重供電。',
+    },
+    category: 'amazon',
+    categoryLabel: {
+      en: 'Amazon E-commerce',
+      'zh-CN': '亚马逊电商',
+      'zh-TW': '亞馬遜電商',
+    },
+    tags: ['Amazon Visual Design', 'Product Photography', 'Outdoor Gear', 'E-commerce'],
+    year: '2024',
+    client: 'Private Label (亚马逊品牌)',
+    role: {
+      en: 'Visual Designer',
+      'zh-CN': '视觉设计师',
+      'zh-TW': '視覺設計師',
+    },
+    thumbnail: 'https://i.ibb.co/RGgpg2xp/SB-6025-D-7.jpg',
+    coverImage: 'https://i.ibb.co/RGgpg2xp/SB-6025-D-7.jpg',
+    featured: false,
+    metrics: [
+      { label: 'Product Conversion', value: '+35%' },
+      { label: 'Click-Through Rate', value: '4.2%' },
+      { label: 'Amazon Ranking', value: 'Top 50' },
+    ],
+    description: {
+      en: `This 2-in-1 rechargeable camping lantern is a multifunctional outdoor lighting product that combines a high-intensity searchlight flashlight with a panoramic camping light. Designed specifically for scenarios such as camping, hiking, fishing, emergency rescue, and home power outages, it features both Type-C charging and a hand-crank emergency power generation system. This dual power supply ensures you never have to worry about power loss outdoors, providing stable and reliable lighting for outdoor travel and sudden emergencies.
+
+The product weighs 345g and measures 182×90×85mm with a color temperature of 7000K. It has a built-in 2000mAh rechargeable lithium battery and features a wear-resistant and drop-resistant casing. Paired with a rotatable portable handle, it is very convenient to hold or hang, and its lightweight body makes it easy to carry.
+
+The device is equipped with three practical lighting modes: a front high-intensity searchlight mode suitable for long-distance search lighting with a battery life of 4-5 hours; a 360° panoramic side camping light mode providing a wide range of soft ambient light with a battery life of 4-5 hours; and an SOS red flashing warning mode for distress calls, which can last up to 200 hours. The multiple modes can be freely switched to adapt to different usage needs.
+
+In terms of power supply, it supports dual replenishment methods. It can be conventionally charged via the Type-C interface; when no power source is available, turning the top hand-crank handle allows for manual power generation, achieving emergency power replenishment in non-power environments. The body also has a USB output interface to temporarily provide emergency power for small digital devices like mobile phones. The overall structure layout is clear, equipped with a rotary lock, power button, and work indicator light. The interface layout is neat, making operation simple and intuitive.
+
+This product serves a dual purpose: it is both a long-range high-intensity flashlight and a wide-range atmospheric camping light. It is widely applicable for outdoor camping, night fishing, hiking, mountaineering, wilderness rescue, and equipment maintenance, and can also be used as emergency supplies for family power outages and disaster avoidance. The combined design of rugged portability, multi-mode lighting, and hand-crank self-rescue power generation makes it an all-around lighting equipment for outdoor travel and home emergencies.`,
+      'zh-CN': `本款二合一充电露营手提灯是集强光探照手电与全景露营灯于一体的多功能户外照明产品，专为露营、徒步、垂钓、应急抢险、居家停电备用等场景打造，兼顾 Type‑C 充电与手摇应急发电双重供电方式，无需担心户外断电问题，为户外出行与突发应急提供稳定可靠的照明保障。
+
+产品整机重量 345g，尺寸 182×90×85mm，色温 7000K，内置 2000mAh 可充电锂电池，机身采用耐磨抗摔外壳，搭配可旋转便携提手，握持、悬挂摆放都十分方便，轻巧机身便于随身携带。
+
+设备搭载三种实用照明模式：前置强光探照模式，适合远距离搜索照明，续航 4‑5 小时；360° 全景侧灯露营模式，提供大范围柔和环境光，续航 4‑5 小时；SOS 红光警示模式，用于遇险求救，最长可续航 200 小时，多模式自由切换适配不同使用需求。
+
+供电方案上支持双路补给，常规可通过 Type‑C 接口进行充电；当没有电源时，转动顶部手摇发电手柄即可手动发电，实现无电源环境下应急补电。机身同时带有 USB 输出接口，可临时为手机等小型数码设备应急供电。整机结构布局清晰，配置旋转锁扣、电源按键、工作指示灯，接口布局规整，操作简单直观。
+
+产品一机两用，既是远射强光手电筒，又是大范围氛围露营灯。广泛适用于户外露营、夜间垂钓、徒步登山、野外搜救、设备维修，也可作为家庭停电、灾害避险的应急物资。坚固便携、多模式照明、手摇自救发电的组合设计，让它成为户外出行与居家应急的全能照明装备。`,
+      'zh-TW': `本款二合一充電露營手提燈是集強光探照手電與全景露營燈於一體的多功能戶外照明產品，專為露營、徒步、垂釣、應急搶險、居家停電備用等場景打造，兼顧 Type‑C 充電與手搖應急發電雙重供電方式，無需擔心戶外斷電問題，為戶外出行與突發應急提供穩定可靠的照明保障。
+
+產品整機重量 345g，尺寸 182×90×85mm，色溫 7000K，內置 2000mAh 可充電鋰電池，機身採用耐磨抗摔外殼，搭配可旋轉便攜提手，握持、懸掛擺放都十分方便，輕巧機身便於隨身攜帶。
+
+設備搭載三種實用照明模式：前置強光探照模式，適合遠距離搜索照明，續航 4‑5 小時；360° 全景側燈露營模式，提供大範圍柔和環境光，續航 4‑5 小時；SOS 紅光警示模式，用於遇險求救，最長可續航 200 小時，多模式自由切換適配不同使用需求。
+
+供電方案上支持雙路補給，常規可通過 Type‑C 接口進行充電；當沒有電源時，轉動頂部手搖發電手柄即可手動發電，實現無電源環境下應急補電。機身同時帶有 USB 輸出接口，可臨時為手機等小型數碼設備應急供電。整機結構布局清晰，配置旋轉鎖扣、電源按鍵、工作指示燈，接口布局規整，操作簡單直觀。
+
+產品一機兩用，既是遠射強光手電筒，又是大範圍氛圍露營燈。廣泛適用於戶外露營、夜間垂釣、徒步登山、野外搜救、設備維修，也可作為家庭停電、災害避險的應急物資。堅固便攜、多模式照明、手搖自救發電的組合設計，讓它成為戶外出行與居家應急的全能照明裝備。`,
+    },
+    problem: {
+      en: '',
+      'zh-CN': '',
+      'zh-TW': '',
+    },
+    solution: {
+      en: '',
+      'zh-CN': '',
+      'zh-TW': '',
+    },
+    tokens: [
+      { name: 'Color A', hex: '#FFFFFF', category: 'surface' },
+      { name: 'Color B', hex: '#000000', category: 'text' },
+    ],
+    interactivePreviewType: 'ai-prompt',
+    wireframeUrl: 'https://i.ibb.co/1fvnfq3y/1.jpg',
+    hiFiUrl: 'https://i.ibb.co/1fvnfq3y/1.jpg',
+  },
+  {
+    id: 'placeholder-2',
+    title: '海外社媒/广告图',
+    tagline: {
+      en: 'A placeholder project added automatically.',
+      'zh-CN': '自动添加的占位项目。',
+      'zh-TW': '自動添加的佔位項目。',
+    },
+    category: 'aigc',
+    categoryLabel: {
+      en: 'AIGC',
+      'zh-CN': 'AIGC',
+      'zh-TW': 'AIGC',
+    },
+    tags: ['Placeholder', 'UI', 'Design'],
+    year: '2026',
+    client: 'Placeholder Client',
+    role: {
+      en: 'Designer',
+      'zh-CN': '设计师',
+      'zh-TW': '設計師',
+    },
+    thumbnail: 'https://i.ibb.co/2YkVFTgS/1-1-800x800.jpg',
+    coverImage: 'https://i.ibb.co/2YkVFTgS/1-1-800x800.jpg',
+    featured: false,
+    metrics: [
+      { label: 'Placeholder Metric', value: '100%' },
+    ],
+    description: {
+      en: 'This is a placeholder description for the newly added project.',
+      'zh-CN': '这是新添加项目的占位说明。',
+      'zh-TW': '這是新添加項目的佔位說明。',
+    },
+    problem: {
+      en: 'Placeholder problem statement.',
+      'zh-CN': '占位问题陈述。',
+      'zh-TW': '佔位問題陳述。',
+    },
+    solution: {
+      en: 'Placeholder solution statement.',
+      'zh-CN': '占位解决方案。',
+      'zh-TW': '佔位解決方案。',
+    },
+    tokens: [
+      { name: 'Color A', hex: '#FFFFFF', category: 'surface' },
+      { name: 'Color B', hex: '#000000', category: 'text' },
+    ],
+    interactivePreviewType: 'ai-prompt',
+    wireframeUrl: 'https://i.ibb.co/Cpg2qjkc/1-01.jpg',
+    hiFiUrl: 'https://i.ibb.co/Cpg2qjkc/1-01.jpg',
+    additionalImages: ["https://i.ibb.co/zV5VvJ25/1-02.jpg", "https://i.ibb.co/DHXJNXbt/1-03.jpg"],
+  },
+  {
+    id: 'placeholder-3',
+    title: 'Inflation 潮牌节日视觉海报',
+    tagline: {
+      en: 'A comprehensive collection of 3D C4D rendered festival visual posters for the Inflation streetwear brand, blending traditional elements with cyber aesthetics.',
+      'zh-CN': '围绕传统节日与品牌营销节点，运用 3D C4D 渲染技术，打造全套融合国潮元素与赛博质感的潮流视觉物料。',
+      'zh-TW': '圍繞傳統節日與品牌營銷節點，運用 3D C4D 渲染技術，打造全套融合國潮元素與賽博質感的潮流視覺物料。',
+    },
+    category: 'aigc',
+    categoryLabel: {
+      en: '3D & Visuals',
+      'zh-CN': '3D 视觉',
+      'zh-TW': '3D 視覺',
+    },
+    tags: ['3D Rendering', 'C4D', 'Streetwear Brand', 'Festival Posters', 'Visual Identity'],
+    year: '2024',
+    client: 'Inflation (捷展潮牌)',
+    role: {
+      en: '3D Visual Designer',
+      'zh-CN': '3D 视觉设计师',
+      'zh-TW': '3D 視覺設計師',
+    },
+    thumbnail: 'https://i.ibb.co/XfnBSqsj/1-2.jpg',
+    coverImage: 'https://i.ibb.co/XfnBSqsj/1-2.jpg',
+    featured: false,
+    metrics: [
+      { label: 'Social Impressions', value: '500K+' },
+      { label: 'Festival Campaigns', value: '4' },
+      { label: 'Visual Output', value: '20+' },
+    ],
+    description: {
+      en: `This project is a collection of annual festival-themed visual posters for the streetwear brand Inflation, part of the Jiezhan streetwear supply chain brand visual system. Centered around traditional festivals, Western holidays, and brand marketing nodes, a full set of 3D trendy visual materials was created to serve brand social media distribution, festival marketing campaigns, and offline ordering fairs, bridging the visual output of online new media communication and offline commercial activities.
+
+The entire poster collection covers diverse time nodes, including the Mid-Autumn Festival, National Day, Valentine's Day, and the Dragon Boat Festival. It also features new IP character posters, ordering fair event posters, and brand series teaser posters, forming a unified yet distinct brand visual matrix. The project is entirely produced using 3D C4D rendering, blending national trend (Guochao) elements, cyber-trendy textures, and virtual 3D art to break the conservative design language of traditional festival posters and reconstruct traditional festival imagery into a trendy form.
+
+For the Mid-Autumn Festival themed posters, mooncakes are reconstructed in 3D with a blue cracked jade texture, paired with virtual scenes of landscapes, full moons, and metal display stands. Multiple gradient color versions are provided, combining the imagery of Mid-Autumn reunion with futuristic trendy aesthetics. The Valentine's Day posters use plush-textured virtual heart models in a pink-softened virtual space to create a romantic and cool atmosphere. The National Day posters feature a visually striking design with layered, deconstructed 3D 'National Day' Chinese characters in red and white, showcasing the power of national trends through artistic 3D deconstruction. The Dragon Boat Festival posters use a metal shopping cart filled with streetwear items as a creative carrier to express the fusion of festival consumption and streetwear culture.
+
+Additionally, original IP character posters of a jade-thorn bear are included as derivative visuals for brand graphic tees, expanding the IP merchandise content. The ordering fair themed posters use mechanical 3D scenes with gears and multi-screen installations to convey the event concept of 'Dawn of Breaking, Rebirth of All Things'. The BOOM series new product teaser posters, combined with 3D interpretations of the brand LOGO, complete the pre-launch promotion for new products.
+
+In terms of design language, the project uniformly uses bold modern sans-serif fonts with bilingual Chinese-English typography. It retains commercial information such as the brand LOGO, slogan, social media handles, dates, and event addresses, balancing artistic expression with commercial practicality. A rich variety of material expressions are applied interchangeably, including jade, plush, metal, mechanical hard surfaces, cracked textures, and matte finishes. The virtual scenes combine elements like landscapes, display stands, and mechanical installations, and each set of posters outputs multiple color versions to adapt to different communication channels.
+
+The materials are mainly used for publications on brand official accounts, Xiaohongshu, Douyin, and other new media platforms. They can also be used for offline ordering fair display boards and promotional materials, empowering the streetwear brand to output highly recognizable brand images across major marketing nodes, and providing visual support for festival marketing, new product launches, and business investment, achieving a two-way fusion of traditional culture and youth trend aesthetics.`,
+      'zh-CN': `本项目为 Inflation 潮牌年度节日主题视觉海报合集，隶属于捷展潮牌供应链品牌视觉体系，围绕传统节日、西方节日、品牌营销节点打造全套 3D 潮流视觉物料，服务品牌社交平台传播、节日营销宣传、订货会线下宣发，打通线上新媒体传播与线下商业活动的视觉输出。
+
+整套海报覆盖多元时间节点，包含中秋、国庆、情人节、端午四大节日主题，同时包含新品 IP 形象海报、订货会活动海报、品牌系列预热海报，形成统一又各具风格的品牌视觉矩阵。项目全部采用三维 C4D 渲染制作，融合国潮元素、赛博潮流质感、虚拟 3D 艺术，打破传统节日海报的保守设计语言，把传统节日意象进行潮流化重构。
+
+中秋主题海报，将月饼进行蓝色裂纹玉石质感 3D 化重塑，搭配山水、圆月、金属展台的虚拟场景，提供多套渐变色彩版本，把中秋团圆意象和未来潮流美学结合；情人节海报以毛绒质感的爱心虚拟模型，粉色柔化的虚拟空间，营造浪漫潮酷氛围；国庆海报以层叠解构立体 “国庆” 汉字为主视觉，红底白字强视觉冲击，将汉字做三维解构艺术处理，彰显国潮力量；端午海报以装满潮牌物料的金属购物车作为创意载体，表达节日消费与潮流文化融合。同时包含玉石荆棘熊原创 IP 形象海报，作为品牌印花 T 恤衍生视觉，拓展 IP 周边内容；订货会主题海报以机械齿轮、多屏幕装置的机械 3D 场景，传递订货会 “破晓曙光，万物新生” 的活动概念；BOOM 系列新品预热海报，搭配品牌 LOGO 三维演绎，完成新品上市前期宣发。
+
+设计语言上，项目统一使用粗体现代无衬线字体，中英双语排版，保留品牌 LOGO、slogan、社交平台入口、时间节点、活动地址等商业信息，兼顾艺术表现力与商业实用性。材质表现丰富，玉石、毛绒、金属、机械硬表面、裂纹肌理、磨砂质感轮番运用，虚拟场景结合山水、展台、机械装置等元素，每一套海报都输出多版本配色，适配不同传播渠道。
+
+物料主要用于品牌公众号、小红书、抖音等新媒体发布，也可用于线下订货会展板、宣传物料，助力潮牌在各大营销节点输出强识别的品牌形象，完成节日营销、新品发布、招商订货的视觉支撑，实现传统文化与青年潮流审美双向融合。`,
+      'zh-TW': `本項目為 Inflation 潮牌年度節日主題視覺海報合集，隸屬於捷展潮牌供應鏈品牌視覺體系，圍繞傳統節日、西方節日、品牌營銷節點打造全套 3D 潮流視覺物料，服務品牌社交平台傳播、節日營銷宣傳、訂貨會線下宣發，打通線上新媒體傳播與線下商業活動的視覺輸出。
+
+整套海報覆蓋多元時間節點，包含中秋、國慶、情人節、端午四大節日主題，同時包含新品 IP 形象海報、訂貨會活動海報、品牌系列預熱海報，形成統一又各具風格的品牌視覺矩陣。項目全部採用三維 C4D 渲染製作，融合國潮元素、賽博潮流質感、虛擬 3D 藝術，打破傳統節日海報的保守設計語言，把傳統節日意象進行潮流化重構。
+
+中秋主題海報，將月餅進行藍色裂紋玉石質感 3D 化重塑，搭配山水、圓月、金屬展台的虛擬場景，提供多套漸變色彩版本，把中秋團圓意象和未來潮流美學結合；情人節海報以毛絨質感的愛心虛擬模型，粉色柔化的虛擬空間，營造浪漫潮酷氛圍；國慶海報以層疊解構立體 “國慶” 漢字為主視覺，紅底白字強視覺衝擊，將漢字做三維解構藝術處理，彰顯國潮力量；端午海報以裝滿潮牌物料的金屬購物車作為創意載體，表達節日消費與潮流文化融合。同時包含玉石荊棘熊原創 IP 形象海報，作為品牌印花 T 恤衍生視覺，拓展 IP 周邊內容；訂貨會主題海報以機械齒輪、多屏幕裝置的機械 3D 場景，傳遞訂貨會 “破曉曙光，萬物新生” 的活動概念；BOOM 系列新品預熱海報，搭配品牌 LOGO 三維演繹，完成新品上市前期宣發。
+
+設計語言上，項目統一使用粗體現代無襯線字體，中英雙語排版，保留品牌 LOGO、slogan、社交平台入口、時間節點、活動地址等商業信息，兼顧藝術表現力與商業實用性。材質表現豐富，玉石、毛絨、金屬、機械硬表面、裂紋肌理、磨砂質感輪番運用，虛擬場景結合山水、展台、機械裝置等元素，每一套海報都輸出多版本配色，適配不同傳播渠道。
+
+物料主要用於品牌公眾號、小紅書、抖音等新媒體發布，也可用於線下訂貨會展板、宣傳物料，助力潮牌在各大營銷節點輸出強識別的品牌形象，完成節日營銷、新品發布、招商訂貨的視覺支撐，實現傳統文化與青年潮流審美雙向融合。`,
+    },
+    problem: {
+      en: '',
+      'zh-CN': '',
+      'zh-TW': '',
+    },
+    solution: {
+      en: '',
+      'zh-CN': '',
+      'zh-TW': '',
+    },
+    tokens: [
+      { name: 'Color A', hex: '#FFFFFF', category: 'surface' },
+      { name: 'Color B', hex: '#000000', category: 'text' },
+    ],
+    interactivePreviewType: 'ai-prompt',
+    additionalImages: ['https://i.ibb.co/FGJp319/1-02.jpg'],
+    wireframeUrl: "https://i.ibb.co/XGJHm8V/1-01.jpg",
+    hiFiUrl: "https://i.ibb.co/XGJHm8V/1-01.jpg",
+  },
+  {
+    id: 'placeholder-4',
+    title: 'Creator升降桌安装说明书',
+    tagline: {
+      en: 'A placeholder project added automatically.',
+      'zh-CN': '自动添加的占位项目。',
+      'zh-TW': '自動添加的佔位項目。',
+    },
+    category: 'aigc',
+    categoryLabel: {
+      en: 'AIGC',
+      'zh-CN': 'AIGC',
+      'zh-TW': 'AIGC',
+    },
+    tags: ['Placeholder', 'UI', 'Design'],
+    year: '2026',
+    client: 'Placeholder Client',
+    role: {
+      en: 'Designer',
+      'zh-CN': '设计师',
+      'zh-TW': '設計師',
+    },
+    thumbnail: 'https://i.ibb.co/3YkCt32d/image.png',
+    coverImage: 'https://i.ibb.co/3YkCt32d/image.png',
+    featured: false,
+    metrics: [
+      { label: 'Placeholder Metric', value: '100%' },
+    ],
+    description: {
+      en: 'This is a placeholder description for the newly added project.',
+      'zh-CN': '这是新添加项目的占位说明。',
+      'zh-TW': '這是新添加項目的佔位說明。',
+    },
+    problem: {
+      en: 'Placeholder problem statement.',
+      'zh-CN': '占位问题陈述。',
+      'zh-TW': '佔位問題陳述。',
+    },
+    solution: {
+      en: 'Placeholder solution statement.',
+      'zh-CN': '占位解决方案。',
+      'zh-TW': '佔位解決方案。',
+    },
+    tokens: [
+      { name: 'Color A', hex: '#FFFFFF', category: 'surface' },
+      { name: 'Color B', hex: '#000000', category: 'text' },
+    ],
+    iframeUrl: 'https://my.feishu.cn/wiki/MNpmwiY6tiJ7FckZusRc3zgInmq?from=from_copylink',
+    interactivePreviewType: 'ai-prompt',
+    wireframeUrl: 'https://picsum.photos/seed/placeholder/1200/800',
+    hiFiUrl: 'https://picsum.photos/seed/placeholder/1200/800',
+  },
+  {
+    id: 'placeholder-5',
+    title: '一代升降桌/亚马逊',
+    tagline: {
+      en: 'A placeholder project added automatically.',
+      'zh-CN': '自动添加的占位项目。',
+      'zh-TW': '自動添加的佔位項目。',
+    },
+    category: 'aigc',
+    categoryLabel: {
+      en: 'AIGC',
+      'zh-CN': 'AIGC',
+      'zh-TW': 'AIGC',
+    },
+    tags: ['Placeholder', 'UI', 'Design'],
+    year: '2026',
+    client: 'Placeholder Client',
+    role: {
+      en: 'Designer',
+      'zh-CN': '设计师',
+      'zh-TW': '設計師',
+    },
+    thumbnail: 'https://picsum.photos/seed/5/1200/800',
+    coverImage: 'https://picsum.photos/seed/5/1200/800',
+    featured: false,
+    metrics: [
+      { label: 'Placeholder Metric', value: '100%' },
+    ],
+    description: {
+      en: 'This is a placeholder description for the newly added project.',
+      'zh-CN': '这是新添加项目的占位说明。',
+      'zh-TW': '這是新添加項目的佔位說明。',
+    },
+    problem: {
+      en: 'Placeholder problem statement.',
+      'zh-CN': '占位问题陈述。',
+      'zh-TW': '佔位問題陳述。',
+    },
+    solution: {
+      en: 'Placeholder solution statement.',
+      'zh-CN': '占位解决方案。',
+      'zh-TW': '佔位解決方案。',
+    },
+    tokens: [
+      { name: 'Color A', hex: '#FFFFFF', category: 'surface' },
+      { name: 'Color B', hex: '#000000', category: 'text' },
+    ],
+    interactivePreviewType: 'ai-prompt',
+    wireframeUrl: 'https://picsum.photos/seed/placeholder/1200/800',
+    hiFiUrl: 'https://picsum.photos/seed/placeholder/1200/800',
+  },
+  {
+    id: 'placeholder-6',
+    title: 'Creator One 亚马逊',
+    tagline: {
+      en: 'A placeholder project added automatically.',
+      'zh-CN': '自动添加的占位项目。',
+      'zh-TW': '自動添加的佔位項目。',
+    },
+    category: 'aigc',
+    categoryLabel: {
+      en: 'AIGC',
+      'zh-CN': 'AIGC',
+      'zh-TW': 'AIGC',
+    },
+    tags: ['Placeholder', 'UI', 'Design'],
+    year: '2026',
+    client: 'Placeholder Client',
+    role: {
+      en: 'Designer',
+      'zh-CN': '设计师',
+      'zh-TW': '設計師',
+    },
+    thumbnail: 'https://picsum.photos/seed/6/1200/800',
+    coverImage: 'https://picsum.photos/seed/6/1200/800',
+    featured: false,
+    metrics: [
+      { label: 'Placeholder Metric', value: '100%' },
+    ],
+    description: {
+      en: 'This is a placeholder description for the newly added project.',
+      'zh-CN': '这是新添加项目的占位说明。',
+      'zh-TW': '這是新添加項目的佔位說明。',
+    },
+    problem: {
+      en: 'Placeholder problem statement.',
+      'zh-CN': '占位问题陈述。',
+      'zh-TW': '佔位問題陳述。',
+    },
+    solution: {
+      en: 'Placeholder solution statement.',
+      'zh-CN': '占位解决方案。',
+      'zh-TW': '佔位解決方案。',
+    },
+    tokens: [
+      { name: 'Color A', hex: '#FFFFFF', category: 'surface' },
+      { name: 'Color B', hex: '#000000', category: 'text' },
+    ],
+    interactivePreviewType: 'ai-prompt',
+    wireframeUrl: 'https://picsum.photos/seed/placeholder/1200/800',
+    hiFiUrl: 'https://picsum.photos/seed/placeholder/1200/800',
+  },
+  {
+    id: 'placeholder-7',
+    title: 'Cyber One 亚马逊',
+    tagline: {
+      en: 'A placeholder project added automatically.',
+      'zh-CN': '自动添加的占位项目。',
+      'zh-TW': '自動添加的佔位項目。',
+    },
+    category: 'aigc',
+    categoryLabel: {
+      en: 'AIGC',
+      'zh-CN': 'AIGC',
+      'zh-TW': 'AIGC',
+    },
+    tags: ['Placeholder', 'UI', 'Design'],
+    year: '2026',
+    client: 'Placeholder Client',
+    role: {
+      en: 'Designer',
+      'zh-CN': '设计师',
+      'zh-TW': '設計師',
+    },
+    thumbnail: 'https://picsum.photos/seed/7/1200/800',
+    coverImage: 'https://picsum.photos/seed/7/1200/800',
+    featured: false,
+    metrics: [
+      { label: 'Placeholder Metric', value: '100%' },
+    ],
+    description: {
+      en: 'This is a placeholder description for the newly added project.',
+      'zh-CN': '这是新添加项目的占位说明。',
+      'zh-TW': '這是新添加項目的佔位說明。',
+    },
+    problem: {
+      en: 'Placeholder problem statement.',
+      'zh-CN': '占位问题陈述。',
+      'zh-TW': '佔位問題陳述。',
+    },
+    solution: {
+      en: 'Placeholder solution statement.',
+      'zh-CN': '占位解决方案。',
+      'zh-TW': '佔位解決方案。',
+    },
+    tokens: [
+      { name: 'Color A', hex: '#FFFFFF', category: 'surface' },
+      { name: 'Color B', hex: '#000000', category: 'text' },
+    ],
+    interactivePreviewType: 'ai-prompt',
+    wireframeUrl: 'https://picsum.photos/seed/placeholder/1200/800',
+    hiFiUrl: 'https://picsum.photos/seed/placeholder/1200/800',
+  },
+  {
+    id: 'placeholder-8',
+    title: '升降桌产品安装视频',
+    tagline: {
+      en: 'A placeholder project added automatically.',
+      'zh-CN': '自动添加的占位项目。',
+      'zh-TW': '自動添加的佔位項目。',
+    },
+    category: 'aigc',
+    categoryLabel: {
+      en: 'AIGC',
+      'zh-CN': 'AIGC',
+      'zh-TW': 'AIGC',
+    },
+    tags: ['Placeholder', 'UI', 'Design'],
+    year: '2026',
+    client: 'Placeholder Client',
+    role: {
+      en: 'Designer',
+      'zh-CN': '设计师',
+      'zh-TW': '設計師',
+    },
+    thumbnail: 'https://picsum.photos/seed/8/1200/800',
+    coverImage: 'https://picsum.photos/seed/8/1200/800',
+    featured: false,
+    metrics: [
+      { label: 'Placeholder Metric', value: '100%' },
+    ],
+    description: {
+      en: 'This is a placeholder description for the newly added project.',
+      'zh-CN': '这是新添加项目的占位说明。',
+      'zh-TW': '這是新添加項目的佔位說明。',
+    },
+    problem: {
+      en: 'Placeholder problem statement.',
+      'zh-CN': '占位问题陈述。',
+      'zh-TW': '佔位問題陳述。',
+    },
+    solution: {
+      en: 'Placeholder solution statement.',
+      'zh-CN': '占位解决方案。',
+      'zh-TW': '佔位解決方案。',
+    },
+    tokens: [
+      { name: 'Color A', hex: '#FFFFFF', category: 'surface' },
+      { name: 'Color B', hex: '#000000', category: 'text' },
+    ],
+    interactivePreviewType: 'ai-prompt',
+    wireframeUrl: 'https://picsum.photos/seed/placeholder/1200/800',
+    hiFiUrl: 'https://picsum.photos/seed/placeholder/1200/800',
+  },
+  {
+    id: 'placeholder-9',
+    title: 'Cyber One 国内平台',
+    tagline: {
+      en: 'A placeholder project added automatically.',
+      'zh-CN': '自动添加的占位项目。',
+      'zh-TW': '自動添加的佔位項目。',
+    },
+    category: 'aigc',
+    categoryLabel: {
+      en: 'AIGC',
+      'zh-CN': 'AIGC',
+      'zh-TW': 'AIGC',
+    },
+    tags: ['Placeholder', 'UI', 'Design'],
+    year: '2026',
+    client: 'Placeholder Client',
+    role: {
+      en: 'Designer',
+      'zh-CN': '设计师',
+      'zh-TW': '設計師',
+    },
+    thumbnail: 'https://picsum.photos/seed/9/1200/800',
+    coverImage: 'https://picsum.photos/seed/9/1200/800',
+    featured: false,
+    metrics: [
+      { label: 'Placeholder Metric', value: '100%' },
+    ],
+    description: {
+      en: 'This is a placeholder description for the newly added project.',
+      'zh-CN': '这是新添加项目的占位说明。',
+      'zh-TW': '這是新添加項目的佔位說明。',
+    },
+    problem: {
+      en: 'Placeholder problem statement.',
+      'zh-CN': '占位问题陈述。',
+      'zh-TW': '佔位問題陳述。',
+    },
+    solution: {
+      en: 'Placeholder solution statement.',
+      'zh-CN': '占位解决方案。',
+      'zh-TW': '佔位解決方案。',
+    },
+    tokens: [
+      { name: 'Color A', hex: '#FFFFFF', category: 'surface' },
+      { name: 'Color B', hex: '#000000', category: 'text' },
+    ],
+    interactivePreviewType: 'ai-prompt',
+    wireframeUrl: 'https://picsum.photos/seed/placeholder/1200/800',
+    hiFiUrl: 'https://picsum.photos/seed/placeholder/1200/800',
+  },
+  {
+    id: 'placeholder-10',
+    title: 'Coffee Table 咖啡桌亚马逊',
+    tagline: {
+      en: 'A placeholder project added automatically.',
+      'zh-CN': '自动添加的占位项目。',
+      'zh-TW': '自動添加的佔位項目。',
+    },
+    category: 'aigc',
+    categoryLabel: {
+      en: 'AIGC',
+      'zh-CN': 'AIGC',
+      'zh-TW': 'AIGC',
+    },
+    tags: ['Placeholder', 'UI', 'Design'],
+    year: '2026',
+    client: 'Placeholder Client',
+    role: {
+      en: 'Designer',
+      'zh-CN': '设计师',
+      'zh-TW': '設計師',
+    },
+    thumbnail: 'https://picsum.photos/seed/10/1200/800',
+    coverImage: 'https://picsum.photos/seed/10/1200/800',
+    featured: false,
+    metrics: [
+      { label: 'Placeholder Metric', value: '100%' },
+    ],
+    description: {
+      en: 'This is a placeholder description for the newly added project.',
+      'zh-CN': '这是新添加项目的占位说明。',
+      'zh-TW': '這是新添加項目的佔位說明。',
+    },
+    problem: {
+      en: 'Placeholder problem statement.',
+      'zh-CN': '占位问题陈述。',
+      'zh-TW': '佔位問題陳述。',
+    },
+    solution: {
+      en: 'Placeholder solution statement.',
+      'zh-CN': '占位解决方案。',
+      'zh-TW': '佔位解決方案。',
+    },
+    tokens: [
+      { name: 'Color A', hex: '#FFFFFF', category: 'surface' },
+      { name: 'Color B', hex: '#000000', category: 'text' },
+    ],
+    interactivePreviewType: 'ai-prompt',
+    wireframeUrl: 'https://picsum.photos/seed/placeholder/1200/800',
+    hiFiUrl: 'https://picsum.photos/seed/placeholder/1200/800',
+  },
+  {
+    id: 'placeholder-11',
+    title: '独立站 banner/推广图',
+    tagline: {
+      en: 'A placeholder project added automatically.',
+      'zh-CN': '自动添加的占位项目。',
+      'zh-TW': '自動添加的佔位項目。',
+    },
+    category: 'aigc',
+    categoryLabel: {
+      en: 'AIGC',
+      'zh-CN': 'AIGC',
+      'zh-TW': 'AIGC',
+    },
+    tags: ['Placeholder', 'UI', 'Design'],
+    year: '2026',
+    client: 'Placeholder Client',
+    role: {
+      en: 'Designer',
+      'zh-CN': '设计师',
+      'zh-TW': '設計師',
+    },
+    thumbnail: 'https://picsum.photos/seed/11/1200/800',
+    coverImage: 'https://picsum.photos/seed/11/1200/800',
+    featured: false,
+    metrics: [
+      { label: 'Placeholder Metric', value: '100%' },
+    ],
+    description: {
+      en: 'This is a placeholder description for the newly added project.',
+      'zh-CN': '这是新添加项目的占位说明。',
+      'zh-TW': '這是新添加項目的佔位說明。',
+    },
+    problem: {
+      en: 'Placeholder problem statement.',
+      'zh-CN': '占位问题陈述。',
+      'zh-TW': '佔位問題陳述。',
+    },
+    solution: {
+      en: 'Placeholder solution statement.',
+      'zh-CN': '占位解决方案。',
+      'zh-TW': '佔位解決方案。',
+    },
+    tokens: [
+      { name: 'Color A', hex: '#FFFFFF', category: 'surface' },
+      { name: 'Color B', hex: '#000000', category: 'text' },
+    ],
+    interactivePreviewType: 'ai-prompt',
+    wireframeUrl: 'https://picsum.photos/seed/placeholder/1200/800',
+    hiFiUrl: 'https://picsum.photos/seed/placeholder/1200/800',
+  },
+  {
+    id: 'placeholder-12',
+    title: '咖啡桌海外节日活动/折扣图',
+    tagline: {
+      en: 'A placeholder project added automatically.',
+      'zh-CN': '自动添加的占位项目。',
+      'zh-TW': '自動添加的佔位項目。',
+    },
+    category: 'aigc',
+    categoryLabel: {
+      en: 'AIGC',
+      'zh-CN': 'AIGC',
+      'zh-TW': 'AIGC',
+    },
+    tags: ['Placeholder', 'UI', 'Design'],
+    year: '2026',
+    client: 'Placeholder Client',
+    role: {
+      en: 'Designer',
+      'zh-CN': '设计师',
+      'zh-TW': '設計師',
+    },
+    thumbnail: 'https://picsum.photos/seed/12/1200/800',
+    coverImage: 'https://picsum.photos/seed/12/1200/800',
+    featured: false,
+    metrics: [
+      { label: 'Placeholder Metric', value: '100%' },
+    ],
+    description: {
+      en: 'This is a placeholder description for the newly added project.',
+      'zh-CN': '这是新添加项目的占位说明。',
+      'zh-TW': '這是新添加項目的佔位說明。',
+    },
+    problem: {
+      en: 'Placeholder problem statement.',
+      'zh-CN': '占位问题陈述。',
+      'zh-TW': '佔位問題陳述。',
+    },
+    solution: {
+      en: 'Placeholder solution statement.',
+      'zh-CN': '占位解决方案。',
+      'zh-TW': '佔位解決方案。',
+    },
+    tokens: [
+      { name: 'Color A', hex: '#FFFFFF', category: 'surface' },
+      { name: 'Color B', hex: '#000000', category: 'text' },
+    ],
+    interactivePreviewType: 'ai-prompt',
+    wireframeUrl: 'https://picsum.photos/seed/placeholder/1200/800',
+    hiFiUrl: 'https://picsum.photos/seed/placeholder/1200/800',
+  },
+  {
+    id: 'placeholder-14',
+    title: '独立站视频产品动效展示',
+    tagline: {
+      en: 'A placeholder project added automatically.',
+      'zh-CN': '自动添加的占位项目。',
+      'zh-TW': '自動添加的佔位項目。',
+    },
+    category: 'aigc',
+    categoryLabel: {
+      en: 'AIGC',
+      'zh-CN': 'AIGC',
+      'zh-TW': 'AIGC',
+    },
+    tags: ['Placeholder', 'UI', 'Design'],
+    year: '2026',
+    client: 'Placeholder Client',
+    role: {
+      en: 'Designer',
+      'zh-CN': '设计师',
+      'zh-TW': '設計師',
+    },
+    thumbnail: 'https://picsum.photos/seed/14/1200/800',
+    coverImage: 'https://picsum.photos/seed/14/1200/800',
+    featured: false,
+    metrics: [
+      { label: 'Placeholder Metric', value: '100%' },
+    ],
+    description: {
+      en: 'This is a placeholder description for the newly added project.',
+      'zh-CN': '这是新添加项目的占位说明。',
+      'zh-TW': '這是新添加項目的佔位說明。',
+    },
+    problem: {
+      en: 'Placeholder problem statement.',
+      'zh-CN': '占位问题陈述。',
+      'zh-TW': '佔位問題陳述。',
+    },
+    solution: {
+      en: 'Placeholder solution statement.',
+      'zh-CN': '占位解决方案。',
+      'zh-TW': '佔位解決方案。',
+    },
+    tokens: [
+      { name: 'Color A', hex: '#FFFFFF', category: 'surface' },
+      { name: 'Color B', hex: '#000000', category: 'text' },
+    ],
+    interactivePreviewType: 'ai-prompt',
+    wireframeUrl: 'https://picsum.photos/seed/placeholder/1200/800',
+    hiFiUrl: 'https://picsum.photos/seed/placeholder/1200/800',
+  },
+  {
+    id: 'placeholder-15',
+    title: 'AIGC',
+    tagline: {
+      en: 'A placeholder project added automatically.',
+      'zh-CN': '自动添加的占位项目。',
+      'zh-TW': '自動添加的佔位項目。',
+    },
+    category: 'aigc',
+    categoryLabel: {
+      en: 'AIGC',
+      'zh-CN': 'AIGC',
+      'zh-TW': 'AIGC',
+    },
+    tags: ['Placeholder', 'UI', 'Design'],
+    year: '2026',
+    client: 'Placeholder Client',
+    role: {
+      en: 'Designer',
+      'zh-CN': '设计师',
+      'zh-TW': '設計師',
+    },
+    thumbnail: 'https://picsum.photos/seed/15/1200/800',
+    coverImage: 'https://picsum.photos/seed/15/1200/800',
+    featured: false,
+    metrics: [
+      { label: 'Placeholder Metric', value: '100%' },
+    ],
+    description: {
+      en: 'This is a placeholder description for the newly added project.',
+      'zh-CN': '这是新添加项目的占位说明。',
+      'zh-TW': '這是新添加項目的佔位說明。',
+    },
+    problem: {
+      en: 'Placeholder problem statement.',
+      'zh-CN': '占位问题陈述。',
+      'zh-TW': '佔位問題陳述。',
+    },
+    solution: {
+      en: 'Placeholder solution statement.',
+      'zh-CN': '占位解决方案。',
+      'zh-TW': '佔位解決方案。',
+    },
+    tokens: [
+      { name: 'Color A', hex: '#FFFFFF', category: 'surface' },
+      { name: 'Color B', hex: '#000000', category: 'text' },
+    ],
+    interactivePreviewType: 'ai-prompt',
+    wireframeUrl: 'https://picsum.photos/seed/placeholder/1200/800',
+    hiFiUrl: 'https://picsum.photos/seed/placeholder/1200/800',
+  }
+];
+
+export const skillCategoriesData = [
+  {
+    title: { en: 'Product UI/UX & Architecture', 'zh-CN': '产品 UI/UX 与架构设计', 'zh-TW': '產品 UI/UX 與架構設計' },
+    skills: [
+      { name: 'Design Systems Architecture', level: 98, icon: 'Layout', description: { en: 'Token trees, atomic component libraries, Figma Tokens Studio sync.', 'zh-CN': '设计令牌树、原子组件库、Figma Tokens 自动同步。', 'zh-TW': '設計令牌樹、原子組件庫、Figma Tokens 自動同步。' } },
+      { name: 'User Research & Wireframing', level: 92, icon: 'Users', description: { en: 'User journeys, information architecture, rapid interactive wireframing.', 'zh-CN': '用户旅程图、信息架构梳理、快速低保真线框测试。', 'zh-TW': '用戶旅程圖、信息架構梳理、快速低保真線框測試。' } },
+      { name: 'Spatial & AI Interface UX', level: 95, icon: 'Cpu', description: { en: 'Non-linear prompt node UX, gesture ergonomics for AR/3D Web.', 'zh-CN': '非线性 AI 画布节点交互、3D/AR 手势人体工程学。', 'zh-TW': '非線性 AI 畫布節點交互、3D/AR 手勢人體工程學。' } },
+    ],
+  },
+  {
+    title: { en: 'Creative Engineering & Tech', 'zh-CN': '创意工程与前端技术', 'zh-TW': '創意工程與前端技術' },
+    skills: [
+      { name: 'React 19 / TypeScript / Vite', level: 96, icon: 'Code', description: { en: 'Clean modular TypeScript architecture with performance optimization.', 'zh-CN': '高内聚低耦合的模块化 TypeScript 与 React 19 开发。', 'zh-TW': '高內聚低耦合的模組化 TypeScript 與 React 19 開發。' } },
+      { name: 'Framer Motion & Physics', level: 98, icon: 'Zap', description: { en: 'Spring curves, layout morphing, magnetic micro-interactions.', 'zh-CN': '阻尼弹簧曲线、布局平滑变形、磁力触感微动效。', 'zh-TW': '阻尼彈簧曲線、布局平滑變形、磁力觸感微動效。' } },
+      { name: 'Tailwind CSS v4 & Flat Styling', level: 99, icon: 'Palette', description: { en: 'WCAG AA+ contrast enforcement, fluid CSS grids, light design.', 'zh-CN': '符合 WCAG AA+ 的无障碍色值、弹性网格与浅色极简排版。', 'zh-TW': '符合 WCAG AA+ 的無障礙色值、彈性網格與淺色極簡排版。' } },
+    ],
+  },
+];
+
+export const timelineData: any[] = [
+  {
+    id: 'exp-1',
+    year: '2025.07 — PRESENT',
+    period: '2025.07 — 至今',
+    company: '深圳市迭代创新科技有限公司',
+    location: 'Shenzhen / Smart Furniture',
+    role: {
+      en: 'Senior Visual Designer / Visual Design Lead',
+      'zh-CN': '高级视觉设计师 / 视觉设计负责人',
+      'zh-TW': '高級視覺設計師 / 視覺設計負責人',
+    },
+    description: {
+      en: 'Responsible for the visual system of smart furniture brands, including visual expression, e-commerce visual design, and product content production for smart standing desks and smart coffee tables.',
+      'zh-CN': '负责智能家具品牌视觉体系建设，围绕升降桌、智能咖啡桌等产品进行品牌视觉表达、电商视觉设计以及产品内容制作。',
+      'zh-TW': '負責智能家具品牌視覺體系建設，圍繞升降桌、智能咖啡桌等產品進行品牌視覺表達、電商視覺設計以及產品內容製作。',
+    },
+    highlights: {
+      en: [
+        'Responsible for the visual design of smart standing desk series products, establishing a high-end smart furniture visual language from product positioning and scene building to detail pages, main e-commerce images, and brand content output.',
+        'Led the visual design of standing desk products on domestic and international platforms, including independent sites, Amazon, JD, Taobao, etc.',
+        'Responsible for visual development of smart coffee table series products, including main product images, detail pages, marketing materials, and visual adaptation for overseas markets.',
+        'Participated in product promotional video production, responsible for shooting coordination, script planning, personnel coordination, and post-production visual output, completing product installation videos and functional demonstration content.',
+        'Responsible for team visual project management, including design task allocation, personnel screening, interview evaluation, and newcomer training.',
+        'Collaborated with product, operation, and supply chain teams to drive visual implementation from R&D to market release.',
+      ],
+      'zh-CN': [
+        '负责智能升降桌系列产品视觉设计，从产品定位、场景构建到详情页、电商主图及品牌内容输出，建立高端智能家具视觉语言。',
+        '主导升降桌产品国内外平台视觉设计，包括独立站、亚马逊、京东、淘宝等渠道的产品视觉呈现。',
+        '负责智能咖啡桌系列产品视觉开发，包括产品主图、详情页、营销素材以及海外市场视觉适配。',
+        '参与产品宣传视频制作，负责拍摄统筹、脚本规划、人员协调及后期视觉输出，完成产品安装视频及功能展示内容制作。',
+        '负责团队视觉项目管理，包括设计任务分配、人员筛选、面试评估以及新人培养。',
+        '协同产品、运营、供应链团队推进产品从研发阶段到市场发布阶段的视觉落地。',
+      ],
+      'zh-TW': [
+        '負責智能升降桌系列產品視覺設計，從產品定位、場景構建到詳情頁、電商主圖及品牌內容輸出，建立高端智能家具視覺語言。',
+        '主導升降桌產品國內外平台視覺設計，包括獨立站、亞馬遜、京東、淘寶等渠道的產品視覺呈現。',
+        '負責智能咖啡桌系列產品視覺開發，包括產品主圖、詳情頁、營銷素材以及海外市場視覺適配。',
+        '參與產品宣傳視頻製作，負責拍攝統籌、腳本規劃、人員協調及後期視覺輸出，完成產品安裝視頻及功能展示內容製作。',
+        '負責團隊視覺項目管理，包括設計任務分配、人員篩選、面試評估以及新人培養。',
+        '協同產品、運營、供應鏈團隊推進產品從研發階段到市場發布階段的視覺落地。',
+      ],
+    },
+    tags: ['Smart Desk System', 'Product Visual Design', 'Brand Content', 'Video Production'],
+  },
+  {
+    id: 'exp-2',
+    year: '2024.10 – 2025.06',
+    period: '2024.10 – 2025.06',
+    company: '深圳睿丰和电子商务有限公司',
+    location: 'Shenzhen / Cross-border E-commerce',
+    role: {
+      en: 'Visual Designer',
+      'zh-CN': '视觉设计师',
+      'zh-TW': '視覺設計師',
+    },
+    description: {
+      en: 'Responsible for cross-border e-commerce brand visual design to serve product promotion needs in overseas markets.',
+      'zh-CN': '负责跨境电商品牌视觉设计，服务海外市场产品推广需求。',
+      'zh-TW': '負責跨境電商品牌視覺設計，服務海外市場產品推廣需求。',
+    },
+    highlights: {
+      en: [
+        'Responsible for visual design of products on overseas channels such as Amazon and independent sites, including main product images, detail pages, marketing images, and promotional materials.',
+        'Participated in visual development of multiple consumer products, including music stands, extension cords, camping lights, solar lights, door closers, tap lights, etc.',
+        'Conducted visual planning based on product selling points, and improved product visual performance through situational design and refinement of product selling points.',
+        'Cooperated with the operations team to optimize product page structure and improve the matching degree of visual content and market demand.',
+        'Participated in brand visual content maintenance and product material iteration for overseas markets.',
+      ],
+      'zh-CN': [
+        '负责亚马逊、独立站等海外渠道产品视觉设计，包括产品主图、详情页、营销图片及推广素材。',
+        '参与多个消费类产品视觉开发，包括音乐支架、延长线、露营灯、太阳能灯、闭门器、拍拍灯等产品。',
+        '根据产品卖点进行视觉策划，通过场景化设计、产品卖点提炼提升商品视觉表现。',
+        '配合运营团队优化产品页面结构，提高视觉内容与市场需求匹配度。',
+        '参与海外市场品牌视觉内容维护及产品素材迭代。',
+      ],
+      'zh-TW': [
+        '負責亞馬遜、獨立站等海外渠道產品視覺設計，包括產品主圖、詳情頁、營銷圖片及推廣素材。',
+        '參與多個消費類產品視覺開發，包括音樂支架、延長線、露營燈、太陽能燈、閉門器、拍拍燈等產品。',
+        '根據產品賣點進行視覺策劃，通過場景化設計、產品賣點提煉提升商品視覺表現。',
+        '配合運營團隊優化產品頁面結構，提高視覺內容與市場需求匹配度。',
+        '參與海外市場品牌視覺內容維護及產品素材迭代。',
+      ],
+    },
+    tags: ['Amazon Visual Design', 'Product Page Design', 'Cross-border Branding'],
+  },
+  {
+    id: 'exp-3',
+    year: '2022.04 – 2024.09',
+    period: '2022.04 – 2024.09',
+    company: '深圳大唐计算机有限公司',
+    location: 'Shenzhen / Digital Product & Cross-border',
+    role: {
+      en: 'Visual Designer',
+      'zh-CN': '视觉设计师',
+      'zh-TW': '視覺設計師',
+    },
+    description: {
+      en: 'Responsible for visual design work related to overseas independent websites and digital products, participating in the construction of brand websites, e-commerce pages, and marketing content.',
+      'zh-CN': '负责海外独立站及数字产品相关视觉设计工作，参与品牌网站、电商页面及营销内容建设。',
+      'zh-TW': '負責海外獨立站及數字產品相關視覺設計工作，參與品牌網站、電商頁面及營銷內容建設。',
+    },
+    highlights: {
+      en: [
+        'Participated in the construction of the visual system of overseas independent websites, responsible for website page design, product display pages, and marketing visual output.',
+        'Responsible for visual design of multiple product lines, including product detail pages, advertising materials, event pages, and other content.',
+        'Deeply involved in the cross-border e-commerce visual process, from product requirement analysis and visual scheme formulation to final launch and delivery.',
+        'Used 3D design tools to assist product visual expression and improve display effects of complex product scenes.',
+        'Collaborated with the operations team to optimize website visual experience and brand presentation.',
+      ],
+      'zh-CN': [
+        '参与海外独立站视觉体系建设，负责网站页面设计、产品展示页面以及营销视觉输出。',
+        '负责多个产品线的视觉设计，包括产品详情页、广告素材、活动页面等内容。',
+        '深度参与跨境电商视觉流程，从产品需求分析、视觉方案制定到最终上线交付。',
+        '使用3D设计工具辅助产品视觉表达，提高复杂产品场景展示效果。',
+        '协同运营团队优化网站视觉体验及品牌呈现。',
+      ],
+      'zh-TW': [
+        '參與海外獨立站視覺體系建設，負責網站頁面設計、產品展示頁面以及營銷視覺輸出。',
+        '負責多個產品線的視覺設計，包括產品詳情頁、廣告素材、活動頁面等內容。',
+        '深度參與跨境電商視覺流程，從產品需求分析、視覺方案制定到最終上線交付。',
+        '使用3D設計工具輔助產品視覺表達，提高複雜產品場景展示效果。',
+        '協同運營團隊優化網站視覺體驗及品牌呈現。',
+      ],
+    },
+    tags: ['Independent Website Design', 'Product Visualization', 'Digital Marketing'],
+  },
+  {
+    id: 'exp-4',
+    year: '2021.03 – 2022.03',
+    period: '2021.03 – 2022.03',
+    company: '广州唐宗贸易有限公司',
+    location: 'Guangzhou / E-commerce',
+    role: {
+      en: 'Graphic/3D Designer',
+      'zh-CN': '平面/三维设计师',
+      'zh-TW': '平面/三維設計師',
+    },
+    description: {
+      en: 'Responsible for the company\'s product visual design and e-commerce platform content production.',
+      'zh-CN': '负责公司产品视觉设计及电商平台内容制作。',
+      'zh-TW': '負責公司產品視覺設計及電商平台內容製作。',
+    },
+    highlights: {
+      en: [
+        'Responsible for visual design of e-commerce product images, detail pages, promotional posters, etc.',
+        'Participated in product photography and post-visual processing to complete product visual packaging.',
+        'Visualized product selling points based on market demand.',
+        'Accumulated experience in visual design for consumer goods and e-commerce platforms.',
+      ],
+      'zh-CN': [
+        '负责电商产品图片、详情页、推广海报等视觉设计。',
+        '参与产品拍摄及后期视觉处理，完成商品视觉包装。',
+        '根据市场需求进行产品卖点视觉化表达。',
+        '积累消费品、电商平台视觉设计经验。',
+      ],
+      'zh-TW': [
+        '負責電商產品圖片、詳情頁、推廣海報等視覺設計。',
+        '參與產品拍攝及後期視覺處理，完成商品視覺包裝。',
+        '根據市場需求進行產品賣點視覺化表達。',
+        '積累消費品、電商平台視覺設計經驗。',
+      ],
+    },
+    tags: ['E-commerce Visual Design', 'Product Content Creation'],
+  },
+];
+
+export const testimonialsData = [
+  {
+    id: 'test-1',
+    name: 'Dr. Sarah Lin',
+    role: 'VP of Product',
+    company: 'AURA Labs',
+    avatar: 'https://picsum.photos/seed/sarahlin/200/200',
+    quote: {
+      en: 'KAI is a rare talent who deeply understands both spatial design aesthetics and complex React code architecture. The AURA AI Canvas was shipped ahead of schedule with remarkable praise from our users.',
+      'zh-CN': 'KAI 是极其稀缺的技术与视觉兼备型人才，既能把握细腻平滑的科技美学，又能直接输出极高质量的 React 架构。AURA 画布的成功离不开他的卓越贡献。',
+      'zh-TW': 'KAI 是極其稀缺的技術與視覺兼備型人才，既能把握細膩平滑的科技美學，又能直接輸出極高質量的 React 架構。AURA 畫布的成功離不開他的卓越貢獻。',
+    },
+    rating: 5,
+  },
+  {
+    id: 'test-2',
+    name: 'Marcus Vance',
+    role: 'Co-Founder & CEO',
+    company: 'NEXUS Spatial Tech',
+    avatar: 'https://picsum.photos/seed/marcusvance/200/200',
+    quote: {
+      en: 'Working with KAI revolutionized our design workflow. The flat light spatial design system he created became the bedrock of our platform.',
+      'zh-CN': '与 KAI 的合作彻底革新了我们的设计工作流。他为我们量身打造的浅色空间设计规范已成为我们公司所有产品的基石。',
+      'zh-TW': '與 KAI 的合作徹底革新了我們的工作流。他為我們量身打造的淺色空間設計規範已成為我們公司所有產品的基石。',
+    },
+    rating: 5,
+  },
+];
