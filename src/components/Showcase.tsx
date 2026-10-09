@@ -292,12 +292,9 @@ export const Showcase: React.FC<ProjectShowcaseProps> = ({
 
   const totalCount = String(filteredData.length).padStart(2, '0');
 
-  // Distribute projects sequentially from small to large:
-  // Row 1: 7 projects (01—07)
-  // Row 2: 6 projects (08—13)
-  // Row 3: 6 projects (14—19)
-  const countRow1 = Math.min(filteredData.length, 7);
-  const countRow2 = Math.min(Math.max(0, filteredData.length - countRow1), 6);
+  // Distribute projects evenly across 3 rows: 6 per row (total 18)
+  const countRow1 = Math.min(filteredData.length, Math.ceil(filteredData.length / 3));
+  const countRow2 = Math.min(Math.max(0, filteredData.length - countRow1), Math.ceil((filteredData.length - countRow1) / 2));
 
   const row1Projects = filteredData.slice(0, countRow1).map((project, idx) => ({
     project,
