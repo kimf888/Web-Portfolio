@@ -30,7 +30,7 @@ export const Navbar: React.FC<NavbarProps> = ({
   ];
 
   return (
-    <header className="fixed top-0 left-0 right-0 z-50 bg-black/75 backdrop-blur-2xl border-b border-white/10 transition-all duration-200 text-white">
+    <header className="fixed top-0 left-0 right-0 z-50 bg-black/30 backdrop-blur-md border-b border-white/10 transition-all duration-300 text-white">
       <div className="w-[1920px] max-w-full mx-auto px-4 sm:px-6 lg:px-8 h-16 sm:h-20 flex items-center justify-between">
         
         {/* Brand Logo / Home Link */}
@@ -107,7 +107,7 @@ export const Navbar: React.FC<NavbarProps> = ({
             initial={{ opacity: 0, height: 0 }}
             animate={{ opacity: 1, height: 'auto' }}
             exit={{ opacity: 0, height: 0 }}
-            className="md:hidden bg-black/75 backdrop-blur-2xl border-b border-white/10 overflow-hidden text-white"
+            className="md:hidden bg-black/40 backdrop-blur-xl border-b border-white/10 overflow-hidden text-white"
           >
             <div className="px-4 pt-3 pb-6 space-y-2">
               <div className="flex items-center gap-2 mb-3 px-2 py-1.5 bg-emerald-500/20 border border-emerald-400/30 text-emerald-200 text-xs font-mono rounded">

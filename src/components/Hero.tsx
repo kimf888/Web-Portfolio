@@ -8,11 +8,11 @@ interface HeroProps {
 }
 
 const heroBackgroundImages = [
-  'https://i.ibb.co/Qjb8Cg2T/4.png',
   'https://i.ibb.co/0VqXxk4g/1.png',
+  'https://i.ibb.co/JR1ydc0X/1.png',
   'https://i.ibb.co/B2yfsPz8/2.png',
   'https://i.ibb.co/SDhkB3j5/3.png',
-  'https://i.ibb.co/JR1ydc0X/1.png',
+  'https://i.ibb.co/Qjb8Cg2T/4.png',
 ];
 
 interface HeroSlideData {
@@ -24,26 +24,9 @@ interface HeroSlideData {
 const heroSlides: HeroSlideData[] = [
   {
     tag: {
-      'zh-CN': '01 · AIGC-创意 · 庭院生态与智能护理',
-      'zh-TW': '01 · AIGC-創意 · 庭院生態與智能護理',
-      en: '01 · AIGC Creative · Smart Garden & Eco Living',
-    },
-    title: {
-      'zh-CN': '智护庭院，自在生长',
-      'zh-TW': '智護庭院，自在生長',
-      en: 'Smart Garden Care, Growing Naturally',
-    },
-    subtitle: {
-      'zh-CN': 'AIGC-创意｜无人割草机与户外智能生态科技，重塑现代庭院惬意生活',
-      'zh-TW': 'AIGC-創意｜無人割草機與戶外智能生態科技，重塑現代庭院愜意生活',
-      en: 'AIGC Creative | Robotic lawn mower & outdoor smart eco-tech for tranquil modern living',
-    },
-  },
-  {
-    tag: {
-      'zh-CN': '02 · 母婴健康与纯净守护',
-      'zh-TW': '02 · 母嬰健康與純淨守護',
-      en: '02 · Pure Care & Healthy Living',
+      'zh-CN': '01 · 母婴健康与纯净守护',
+      'zh-TW': '01 · 母嬰健康與純淨守護',
+      en: '01 · Pure Care & Healthy Living',
     },
     title: {
       'zh-CN': '安心洁净，守护孩童自在空间',
@@ -54,6 +37,23 @@ const heroSlides: HeroSlideData[] = [
       'zh-CN': '母婴级全维深度洁净，为孩子打造自由探索的纯净天地',
       'zh-TW': '母嬰級全維深度潔淨，為孩子打造自由探索的純淨天地',
       en: 'Maternal-grade deep sanitation, creating a safe world for kids to explore',
+    },
+  },
+  {
+    tag: {
+      'zh-CN': '02 · 电竞工坊与沉浸空间',
+      'zh-TW': '02 · 電競工坊與沉浸空間',
+      en: '02 · Esports Workstation & Performance',
+    },
+    title: {
+      'zh-CN': '重构高效电竞工作空间',
+      'zh-TW': '重構高效電競工作空間',
+      en: 'Rebuilding High-Performance Esports Workspaces',
+    },
+    subtitle: {
+      'zh-CN': '沉浸式声光氛围与人体工学，激发生产力与竞技巅峰潜能',
+      'zh-TW': '沉浸式聲光氛圍與人體工學，激發生產力與競技巔峰潛能',
+      en: 'Immersive acoustics, lighting & ergonomics to unleash peak gaming performance',
     },
   },
   {
@@ -92,19 +92,19 @@ const heroSlides: HeroSlideData[] = [
   },
   {
     tag: {
-      'zh-CN': '05 · 电竞工坊与沉浸空间',
-      'zh-TW': '05 · 電競工坊與沉浸空間',
-      en: '05 · Esports Workstation & Performance',
+      'zh-CN': '05 · AIGC-创意 · 庭院生态与智能护理',
+      'zh-TW': '05 · AIGC-創意 · 庭院生態與智能護理',
+      en: '05 · AIGC Creative · Smart Garden & Eco Living',
     },
     title: {
-      'zh-CN': '重构高效电竞工作空间',
-      'zh-TW': '重構高效電競工作空間',
-      en: 'Rebuilding High-Performance Esports Workspaces',
+      'zh-CN': '智护庭院，自在生长',
+      'zh-TW': '智護庭院，自在生長',
+      en: 'Smart Garden Care, Growing Naturally',
     },
     subtitle: {
-      'zh-CN': '沉浸式声光氛围与人体工学，激发生产力与竞技巅峰潜能',
-      'zh-TW': '沉浸式聲光氛圍與人體工學，激發生產力與競技巔峰潛能',
-      en: 'Immersive acoustics, lighting & ergonomics to unleash peak gaming performance',
+      'zh-CN': 'AIGC-创意｜无人割草机与户外智能生态科技，重塑现代庭院惬意生活',
+      'zh-TW': 'AIGC-創意｜無人割草機與戶外智能生態科技，重塑現代庭院愜意生活',
+      en: 'AIGC Creative | Robotic lawn mower & outdoor smart eco-tech for tranquil modern living',
     },
   },
   {
@@ -197,7 +197,7 @@ export const Hero: React.FC<HeroProps> = ({ lang, accentHex }) => {
                 <span className="w-2 h-2 rounded-full bg-blue-500 animate-pulse" />
                 <span>{heroSlides[bgIndex]?.tag[lang] || heroSlides[0].tag[lang]}</span>
               </div>
-              {bgIndex === 0 && (
+              {bgIndex === 4 && (
                 <div className="text-white/90 text-xs sm:text-sm font-medium drop-shadow-md bg-black/40 backdrop-blur-xs px-3 py-1 rounded-md border border-white/10 w-max">
                   {lang === 'en' ? 'Robotic Mower · AIGC Creative' : '无人智能割草机 · AIGC-创意'}
                 </div>
