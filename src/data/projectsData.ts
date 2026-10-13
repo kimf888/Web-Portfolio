@@ -2,102 +2,8 @@ import { Project } from "../types";
 
 export const projectsData: Project[] = [
   {
-    "id": "gen1-standing-desk-amazon",
-    "title": "一代升降桌亚马逊",
-    "tagline": {
-      "en": "Amazon A+ commercial visual suite for the All-in-One smart motorized standing desk, highlighting integrated desktop ecosystem and dual-motor ergonomics.",
-      "zh-CN": "全功能智能电动升降桌亚马逊 A+ 详情页商业视觉，主打一站式集成桌面生态与 All in One 智能体验。",
-      "zh-TW": "全功能智能電動升降桌亞馬遜 A+ 詳情頁商業視覺，主打一站式集成桌面生態與 All in One 智能體驗。"
-    },
-    "category": "amazon",
-    "categoryLabel": {
-      "en": "Amazon",
-      "zh-CN": "亚马逊",
-      "zh-TW": "亞馬遜"
-    },
-    "tags": [
-      "智能升降桌",
-      "亚马逊 A+ 详情页",
-      "一站式桌面生态",
-      "All in One",
-      "双电机驱动",
-      "跨境电商视觉"
-    ],
-    "year": "2024",
-    "client": "Smart Workspace / 跨境智能家居品牌",
-    "role": {
-      "en": "Lead E-commerce Visual Designer & 3D Artist",
-      "zh-CN": "电商视觉主设计师与三维渲染师",
-      "zh-TW": "電商視覺主設計師與三維渲染師"
-    },
-    "thumbnail": "https://i.ibb.co/0yJfSd2J/01.png",
-    "coverImage": "https://i.ibb.co/0yJfSd2J/01.png",
-    "featured": false,
-    "metrics": [
-      {
-        "label": "最大承重",
-        "value": "275 lbs (125kg)"
-      },
-      {
-        "label": "升降高度",
-        "value": "30.3 - 45.2 英寸"
-      },
-      {
-        "label": "双驱动电机",
-        "value": "5万次寿命测试"
-      },
-      {
-        "label": "集成功能",
-        "value": "无线充/冷热杯垫/音箱"
-      }
-    ],
-    "description": {
-      "en": "This project is a full-featured commercial Amazon A+ visual suite designed for an all-in-one smart motorized standing desk on international cross-border platforms. Centered around the core proposition of a \"One-Stop Integrated Desktop Ecosystem,\" the desk unifies sit-stand ergonomics, desktop power distribution, multi-angle wireless charging, temperature-controlled mug coasters, audio entertainment, and organized storage into a single unified workstation for global remote workers, gamers, and tech enthusiasts.\n\nPowered by a dual-motor drive system rigorously tested for over 50,000 cycles, the desk covers a lift range of 30.3 to 45.2 inches with a maximum load capacity of 275 lbs. It achieves deep hardware integration: built-in power hub with clean under-desk cable management; multi-angle wireless charging pad supporting flat, stand, and swivel orientations; smart dual-mode coaster supporting 130-140°F heating and 33.8-41°F cooling; hidden pull-out storage drawers, modular pegboard organizing systems, and under-desk PC mounts; alongside a pop-up Bluetooth sound system and dynamic RGB ambient lighting. The product supports dual control via a physical LED control handset and a dedicated mobile app.\n\nThe entire A+ visual system adopts a high-tech black and neon green aesthetic. The content framework comprehensively encompasses dynamic height adjustments, motor durability cutaways, feature close-ups of all 7 core modules, accessory storage teardowns, step-by-step assembly guides, dimensional load specifications, and realistic lifestyle scenarios across living rooms, gaming setups, and executive studies. Through a blend of macro feature renders and realistic spatial scenes, the visuals clearly convey the product's \"All in One\" differentiated value.\n\nFully compliant with cross-border e-commerce visual standards, these assets are deployed on Amazon A+ detail pages, DTC independent brand sites, and targeted ad campaigns, establishing decisive competitive advantages in the competitive international standing desk market.",
-      "zh-CN": "本项目为面向海外亚马逊等跨境平台打造的全功能智能电动升降桌 A + 商业视觉项目，主打一站式集成桌面生态核心定位，将升降办公、桌面供电、无线充电、温控杯垫、音频娱乐、收纳整理全部整合于桌体，面向海外居家办公、电竞娱乐、数码爱好者群体，打造高度集成的智能站立办公桌产品。\n\n产品搭载双驱动升降电机，历经 5 万次寿命测试，升降覆盖 30.3-45.2 英寸高度区间，整机最大承重 275lbs，支持坐站交替办公。桌体实现全功能深度集成：内置一体化供电集线系统，桌下走线整洁；桌面集成多角度无线充电区，支持平放、立式、旋转多姿态手机充电；配备智能冷热杯垫，支持 130-140℉制热与 33.8-41℉制冷双模式；搭配隐藏式收纳抽屉、洞洞板置物系统、主机挂架，实现桌面杂物全收纳；同时配备升降式蓝牙音箱、RGB 氛围灯带，兼顾娱乐氛围与办公体验。产品支持实体控制面板与手机 APP 双端智能控制，可精准调节高度、切换功能模式。\n\n整套 A + 视觉采用科技黑绿配色风格，内容体系完整覆盖：升降高度动态演示、电机核心结构与寿命展示、七大核心功能模块特写、配件收纳细节拆解、产品安装流程、尺寸承重参数标注，以及居家客厅、电竞房、书房等多场景实景效果。画面通过功能特写 + 场景实拍结合的方式，直观呈现产品 “All in One” 的差异化优势，清晰传递每一项功能的使用价值。\n\n全套视觉素材符合跨境平台展示规范，可直接用于亚马逊 A + 详情页、独立站产品页、广告投放物料。项目通过强集成化的功能卖点呈现，区别于普通升降桌单一升降属性，强化一站式桌面解决方案的产品价值，精准触达海外追求高效、整洁、多功能桌面体验的消费群体，助力产品在海外升降桌赛道建立差异化竞争力。",
-      "zh-TW": "本項目為面向海外亞馬遜等跨境平台打造的全功能智能電動升降桌 A + 商業視覺項目，主打一站式集成桌面生態核心定位，將升降辦公、桌面供電、無線充電、溫控杯墊、音頻娛樂、收納整理全部整合於桌體，面向海外居家辦公、電競娛樂、數碼愛好者群體，打造高度集成的智能站立辦公桌產品。\n\n產品搭載雙驅動升降電機，歷經 5 萬次壽命測試，升降覆蓋 30.3-45.2 英寸高度區間，整機最大承重 275lbs，支持坐站交替辦公。桌體實現全功能深度集成：內置一體化供電集線系統，桌下走線整潔；桌面集成多角度無線充電區，支持平放、立式、旋轉多姿態手機充電；配備智能冷熱杯墊，支持 130-140℉制熱與 33.8-41℉制冷雙模式；搭配隱藏式收納抽屜、洞洞板置物系統、主機掛架，實現桌面雜物全收納；同時配備升降式藍牙音箱、RGB 氛圍燈帶，兼顧娛樂氛圍與辦公體驗。產品支持實體控制面板與手機 APP 雙端智能控制，可精準調節高度、切換功能模式。\n\n整套 A + 視覺採用科技黑綠配色風格，內容體系完整覆蓋：升降高度動態演示、電機核心結構與壽命展示、七大核心功能模組特寫、配件收納細節拆解、產品安裝流程、尺寸承重參數標註，以及居家客廳、電競房、書房等多場景實景效果。畫面通過功能特寫 + 場景實拍結合的方式，直觀呈現產品 “All in One” 的差異化優勢，清晰傳遞每一項功能的使用價值。\n\n全套視覺素材符合跨境平台展示規範，可直接用於亞馬遜 A + 詳情頁、獨立站產品頁、廣告投放物料。項目通過強集成化的功能賣點呈現，區別於普通升降桌單一升降屬性，強化一站式桌面解決方案的產品價值，精準觸達海外追求高效、整潔、多功能桌面體驗的消費群體，助力產品在海外升降桌賽道建立差異化競爭力。"
-    },
-    "problem": {
-      "en": "Standard motorized desks in cross-border markets suffer from severe homogeneity with single-function lift features and messy peripheral wiring, struggling to convey a comprehensive premium smart ecosystem.",
-      "zh-CN": "传统海外升降桌市场同质化严重，单一的升降属性与杂乱的桌面外接走线难以满足高要求消费者对一体化智能桌面的需求。",
-      "zh-TW": "傳統海外升降桌市場同質化嚴重，單一的升降屬性與雜亂的桌面外接走線難以滿足高要求消費者對一體化智能桌面的需求。"
-    },
-    "solution": {
-      "en": "Engineered a cohesive tech-black & green A+ visual framework combining 7 modular functional closeups with multi-room lifestyle renders to firmly establish the \"All in One\" ecosystem value.",
-      "zh-CN": "采用科技黑绿配色风格与功能特写 + 实景渲染结合，系统拆解双电机寿命、七大集成模块与收纳系统，立体传达 All in One 一体化桌面价值。",
-      "zh-TW": "採用科技黑綠配色風格與功能特寫 + 實景渲染結合，系統拆解雙電機壽命、七大集成模組與收納系統，立體傳達 All in One 一體化桌面價值。"
-    },
-    "tokens": [
-      {
-        "name": "Cyber Tech Green",
-        "hex": "#10B981",
-        "category": "accent"
-      },
-      {
-        "name": "Carbon Black Surface",
-        "hex": "#0F172A",
-        "category": "surface"
-      },
-      {
-        "name": "Pure White Text",
-        "hex": "#F8FAFC",
-        "category": "text"
-      },
-      {
-        "name": "Slate Gray Line",
-        "hex": "#64748B",
-        "category": "primary"
-      }
-    ],
-    "additionalImages": [
-      "https://i.ibb.co/8gYpQcvG/1.jpg"
-    ],
-    "interactivePreviewType": "ai-prompt",
-    "wireframeUrl": "https://i.ibb.co/8gYpQcvG/1.jpg",
-    "hiFiUrl": "https://i.ibb.co/8gYpQcvG/1.jpg"
-  },
-  {
     "id": "placeholder-7",
-    "title": "Cyber One 亚马逊",
+    "title": "Cyber One 升降桌",
     "tagline": {
       "en": "Cyber One modular electric gaming standing desk cross-border e-commerce visual project for Amazon and independent storefronts.",
       "zh-CN": "面向亚马逊、海外独立站打造的 Cyber One 模块化电竞升降桌跨境电商视觉项目。",
@@ -127,7 +33,7 @@ export const projectsData: Project[] = [
     "thumbnail": "https://i.ibb.co/39mNJZ9s/1.png",
     "coverImage": "https://i.ibb.co/39mNJZ9s/1.png",
     "additionalImages": [
-      "https://i.ibb.co/7xkPVR79/1.jpg"
+      "https://i.ibb.co/JW27NDYW/1.jpg"
     ],
     "featured": false,
     "metrics": [
@@ -176,12 +82,12 @@ export const projectsData: Project[] = [
       }
     ],
     "interactivePreviewType": "ai-prompt",
-    "wireframeUrl": "https://i.ibb.co/7xkPVR79/1.jpg",
-    "hiFiUrl": "https://i.ibb.co/7xkPVR79/1.jpg"
+    "wireframeUrl": "https://i.ibb.co/JW27NDYW/1.jpg",
+    "hiFiUrl": "https://i.ibb.co/JW27NDYW/1.jpg"
   },
   {
     "id": "placeholder-10",
-    "title": "Coffee Table 咖啡桌亚马逊",
+    "title": "Coffee Table 咖啡桌",
     "tagline": {
       "en": "Amazon A+ page design for smart multifunctional coffee table with dual-zone cooling, audio, and wireless charging.",
       "zh-CN": "多功能智能茶几跨境电商 A+ 页面设计，集双温区冷藏、音频娱乐、智能充电与氛围灯光于一体。",
@@ -1061,96 +967,6 @@ export const projectsData: Project[] = [
     "hiFiUrl": "https://i.ibb.co/Xfdhs2zX/1.jpg"
   },
   {
-    "id": "lumen-health-mobile",
-    "title": "大唐计算机产品场景应用",
-    "tagline": {
-      "en": "Establishing a unified product visual display system for Datang Computer devices through product rendering and multi-scenario construction.",
-      "zh-CN": "围绕大唐计算机旗下计算设备，通过产品渲染与多场景构建，建立统一的产品视觉展示体系。",
-      "zh-TW": "圍繞大唐計算機旗下計算設備，通過產品渲染與多場景構建，建立統一的產品視覺展示體系。"
-    },
-    "category": "independent-site",
-    "categoryLabel": {
-      "en": "3D & Visuals",
-      "zh-CN": "3D 视觉",
-      "zh-TW": "3D 視覺"
-    },
-    "tags": [
-      "3D Rendering",
-      "Scene Design",
-      "Product Visuals",
-      "Lighting",
-      "CGI"
-    ],
-    "year": "2024",
-    "client": "Datang Computer (大唐计算机)",
-    "role": {
-      "en": "3D Visual Designer",
-      "zh-CN": "三维视觉设计师",
-      "zh-TW": "三維視覺設計師"
-    },
-    "thumbnail": "https://i.ibb.co/tpTkhVQ2/1.jpg",
-    "coverImage": "https://i.ibb.co/Cp2bL5yj/1.jpg",
-    "metrics": [
-      {
-        "label": "App Store Rating",
-        "value": "4.9★"
-      },
-      {
-        "label": "Daily Log Retention",
-        "value": "78%"
-      },
-      {
-        "label": "EHR Sync Accuracy",
-        "value": "99.9%"
-      }
-    ],
-    "description": {
-      "en": "This project centers on the visual product design for Datang Computer's Mini PCs, embedded computers, and industrial computing devices. Through product rendering, scene construction, and multi-scenario application visuals, it establishes a unified product display system.\n\nThe core objective of the project is to address two issues in the visual expression of traditional industrial computer products: first, the products themselves have strong technical attributes, making their appearance and functional information relatively rational; second, there is a lack of a unified visual language across different product models and application scenarios. Therefore, during the design process, the product itself is treated as the visual subject, extended by combining different usage scenarios. Through materials, lighting, spatial structure, and color atmosphere, the technological attributes of the products are enhanced while maintaining accurate presentation of the product's appearance, structure, and interface details.\n\nBased on the positioning and usage environment of different products, a variety of product application scenarios were established, including:\n\nIndustrial / Commercial Scenarios: Dominated by white and light gray spaces, reflecting an industrial technological feel through architectural structures, three-dimensional platforms, and linear textures to highlight the product's professional attributes.\nOffice Scenarios: Combining the Mini PC with monitors, keyboards, mice, and other equipment to simulate a real desktop office environment, reinforcing the product's application attributes in daily work.\nEntertainment / Gaming Scenarios: Utilizing dark environments and purple ambient lighting, placing the product within monitor, game screen, and RGB lighting environments to highlight the Mini PC's entertainment and high-performance computing attributes.\nHome / Life Scenarios: Softening the sense of distance of industrial equipment through more restrained indoor spaces, desktops, and home elements, presenting a more lifestyle-oriented visual image for the product.",
-      "zh-CN": "本项目围绕大唐计算机旗下 Mini PC、嵌入式计算机及工业计算设备展开产品视觉设计，通过产品渲染、场景构建及多场景应用视觉，建立统一的产品展示体系。\n\n项目的核心目标是解决传统工业计算机产品在视觉表达上的两个问题：一是产品本身具有较强的技术属性，外观和功能信息相对理性；二是不同产品型号、不同应用场景之间缺乏统一的视觉语言。因此在设计过程中，以产品本身为视觉主体，结合不同使用场景进行延展，通过材质、灯光、空间结构和色彩氛围强化产品的科技属性，同时保持产品外观、结构及接口细节的准确呈现。\n\n根据不同产品的定位和使用环境，建立了多种产品应用场景，包括：\n\n工业 / 商业场景：以白色、浅灰色空间为主，通过建筑结构、立体平台和线性纹理体现工业科技感，突出产品的专业属性。\n办公场景：将Mini PC与显示器、键盘、鼠标等设备结合，模拟真实桌面办公环境，强化产品在日常工作中的应用属性。\n娱乐 / 游戏场景：采用深色环境及紫色氛围光，将产品置于显示器、游戏画面和RGB灯光环境中，突出Mini PC的娱乐及高性能计算属性。\n家庭 / 生活场景：通过更加克制的室内空间、桌面及家居元素弱化工业设备的距离感，使产品呈现更加生活化的视觉形象。",
-      "zh-TW": "本項目圍繞大唐計算機旗下 Mini PC、嵌入式計算機及工業計算設備展開產品視覺設計，通過產品渲染、場景構建及多場景應用視覺，建立統一的產品展示體系。\n\n項目的核心目標是解決傳統工業計算機產品在視覺表達上的兩個問題：一是產品本身具有較強的技術屬性，外觀和功能信息相對理性；二是不同產品型號、不同應用場景之間缺乏統一的視覺語言。因此在設計過程中，以產品本身為視覺主體，結合不同使用場景進行延展，通過材質、燈光、空間結構和色彩氛圍強化產品的科技屬性，同時保持產品外觀、結構及接口細節的準確呈現。\n\n根據不同產品的定位和使用環境，建立了多種產品應用場景，包括：\n\n工業 / 商業場景：以白色、淺灰色空間為主，通過建築結構、立體平台和線性紋理體現工業科技感，突出產品的專業屬性。\n辦公場景：將Mini PC與顯示器、鍵盤、鼠標等設備結合，模擬真實桌面辦公環境，強化產品在日常工作中的應用屬性。\n娛樂 / 遊戲場景：採用深色環境及紫色氛圍光，將產品置於顯示器、遊戲畫面和RGB燈光環境中，突出Mini PC的娛樂及高性能計算屬性。\n家庭 / 生活場景：通過更加克制的室內空間、桌面及家居元素弱化工業設備的距離感，使產品呈現更加生活化的視覺形象。"
-    },
-    "problem": {
-      "en": "",
-      "zh-CN": "",
-      "zh-TW": ""
-    },
-    "solution": {
-      "en": "",
-      "zh-CN": "",
-      "zh-TW": ""
-    },
-    "interactivePreviewType": "ai-prompt",
-    "tokens": [
-      {
-        "name": "Soft Health Surface",
-        "hex": "#F0F9FF",
-        "category": "surface"
-      },
-      {
-        "name": "Sky Cyan Accent",
-        "hex": "#0284C7",
-        "category": "accent"
-      },
-      {
-        "name": "Mint Health Positive",
-        "hex": "#10B981",
-        "category": "accent"
-      },
-      {
-        "name": "Slate Soft Border",
-        "hex": "#E0F2FE",
-        "category": "primary"
-      },
-      {
-        "name": "Teal Deep Text",
-        "hex": "#0F172A",
-        "category": "text"
-      }
-    ],
-    "wireframeUrl": "https://i.ibb.co/Cp2bL5yj/1.jpg",
-    "hiFiUrl": "https://i.ibb.co/Cp2bL5yj/1.jpg"
-  },
-  {
     "id": "cyber-kinetic-branding",
     "title": "产品白底渲染",
     "tagline": {
@@ -1236,8 +1052,8 @@ export const projectsData: Project[] = [
         "category": "text"
       }
     ],
-    "wireframeUrl": "https://i.ibb.co/0j7X9d0G/1.jpg",
-    "hiFiUrl": "https://i.ibb.co/0j7X9d0G/1.jpg"
+    "wireframeUrl": "https://i.ibb.co/Cp2bL5yj/1.jpg",
+    "hiFiUrl": "https://i.ibb.co/Cp2bL5yj/1.jpg"
   },
   {
     "id": "placeholder-8",
@@ -1317,8 +1133,8 @@ export const projectsData: Project[] = [
       }
     ],
     "interactivePreviewType": "ai-prompt",
-    "wireframeUrl": "https://i.ibb.co/wFXtyQP7/IMG-2825.jpg",
-    "hiFiUrl": "https://i.ibb.co/wFXtyQP7/IMG-2825.jpg",
+    "wireframeUrl": "https://i.ibb.co/JW27NDYW/1.jpg",
+    "hiFiUrl": "https://i.ibb.co/JW27NDYW/1.jpg",
     "iframeUrl": "https://my.feishu.cn/slides/WGHxsXBDSl5gPFddmqbcH7PSn2b?from=from_copylink"
   },
   {

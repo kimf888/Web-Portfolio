@@ -1,4 +1,5 @@
-import React, { useState, useEffect } from 'react';
+import { ChevronLeft, ChevronRight } from 'lucide-react';
+import React, { useState, useEffect, useCallback } from 'react';
 import { motion, AnimatePresence } from 'motion/react';
 import { Language } from '../types';
 
@@ -159,28 +160,66 @@ const marqueeItems = [
 
 export const Hero: React.FC<HeroProps> = ({ lang, accentHex }) => {
   const [bgIndex, setBgIndex] = useState(0);
+  const [direction, setDirection] = useState<'next' | 'prev'>('next');
+  const [isHovered, setIsHovered] = useState(false);
 
-  // Auto-cycle background images from left to right every 4.8 seconds
-  useEffect(() => {
-    const bgTimer = setInterval(() => {
-      setBgIndex((prev) => (prev + 1) % heroBackgroundImages.length);
-    }, 4800);
-    return () => clearInterval(bgTimer);
+  // Switch to next slide
+  const goToNext = useCallback(() => {
+    setDirection('next');
+    setBgIndex((prev) => (prev + 1) % heroBackgroundImages.length);
   }, []);
 
+  // Switch to prev slide
+  const goToPrev = useCallback(() => {
+    setDirection('prev');
+    setBgIndex((prev) => (prev - 1 + heroBackgroundImages.length) % heroBackgroundImages.length);
+  }, []);
+
+  // Auto-cycle background images every 5 seconds (pauses on hover)
+  useEffect(() => {
+    const bgTimer = setInterval(() => {
+      if (!isHovered) {
+        goToNext();
+      }
+    }, 5000);
+    return () => clearInterval(bgTimer);
+  }, [goToNext, isHovered]);
+
+  // Directional slide variants
+  const slideVariants = {
+    enter: (dir: 'next' | 'prev') => ({
+      x: dir === 'next' ? '100%' : '-100%',
+      opacity: 0.85,
+    }),
+    center: {
+      x: '0%',
+      opacity: 1,
+    },
+    exit: (dir: 'next' | 'prev') => ({
+      x: dir === 'next' ? '-100%' : '100%',
+      opacity: 0.85,
+    }),
+  };
+
   return (
-    <section className="relative overflow-hidden bg-black border-b border-neutral-800 w-full aspect-[16/10] min-h-[640px] max-h-[1200px]">
-      
-      {/* Background Images Carousel (Slides progressively from left to right, nicely filling the hero section) */}
-      <div className="absolute inset-0 z-0 overflow-hidden w-full h-full">
-        <AnimatePresence initial={false}>
+    <section
+      onMouseEnter={() => setIsHovered(true)}
+      onMouseLeave={() => setIsHovered(false)}
+      className="relative overflow-hidden bg-black border-b border-neutral-800 w-full aspect-[16/10] min-h-[640px] max-h-[1200px] group/hero select-none"
+    >
+      {/* Background Images Carousel */}
+      <div className="absolute inset-0 z-0 overflow-hidden w-full h-full pointer-events-none">
+        <AnimatePresence initial={false} custom={direction}>
           <motion.div
             key={bgIndex}
-            initial={{ x: '-100%' }}
-            animate={{ x: '0%' }}
-            exit={{ x: '100%' }}
+            custom={direction}
+            variants={slideVariants}
+            initial="enter"
+            animate="center"
+            exit="exit"
             transition={{
-              x: { duration: 1.2, ease: [0.25, 1, 0.5, 1] },
+              x: { duration: 0.75, ease: [0.22, 1, 0.36, 1] },
+              opacity: { duration: 0.35 },
             }}
             className="absolute inset-0 w-full h-full"
           >
@@ -205,6 +244,45 @@ export const Hero: React.FC<HeroProps> = ({ lang, accentHex }) => {
             </div>
           </motion.div>
         </AnimatePresence>
+      </div>
+
+      {/* Left Carousel Arrow Button */}
+      <button
+        onClick={goToPrev}
+        aria-label="Previous slide"
+        className="absolute left-4 sm:left-8 top-[calc(50%-40px)] -translate-y-1/2 z-20 w-11 h-11 sm:w-13 sm:h-13 rounded-full bg-black/50 hover:bg-black/85 text-white/80 hover:text-white border border-white/20 hover:border-white/40 backdrop-blur-md flex items-center justify-center transition-all duration-200 shadow-xl hover:scale-105 active:scale-95 cursor-pointer opacity-85 hover:opacity-100 group/btn"
+      >
+        <ChevronLeft className="w-6 h-6 sm:w-7 sm:h-7 transition-transform group-hover/btn:-translate-x-0.5" />
+      </button>
+
+      {/* Right Carousel Arrow Button */}
+      <button
+        onClick={goToNext}
+        aria-label="Next slide"
+        className="absolute right-4 sm:right-8 top-[calc(50%-40px)] -translate-y-1/2 z-20 w-11 h-11 sm:w-13 sm:h-13 rounded-full bg-black/50 hover:bg-black/85 text-white/80 hover:text-white border border-white/20 hover:border-white/40 backdrop-blur-md flex items-center justify-center transition-all duration-200 shadow-xl hover:scale-105 active:scale-95 cursor-pointer opacity-85 hover:opacity-100 group/btn"
+      >
+        <ChevronRight className="w-6 h-6 sm:w-7 sm:h-7 transition-transform group-hover/btn:translate-x-0.5" />
+      </button>
+
+      {/* Floating Slide Indicators (Top Right) */}
+      <div className="absolute top-6 right-6 sm:top-8 sm:right-8 z-20 flex items-center gap-3 pointer-events-auto">
+        <div className="flex items-center gap-1.5 px-2.5 py-1.5 rounded-full bg-black/60 backdrop-blur-md border border-white/20 shadow-lg">
+          {heroBackgroundImages.map((_, idx) => (
+            <button
+              key={idx}
+              onClick={() => {
+                setDirection(idx >= bgIndex ? 'next' : 'prev');
+                setBgIndex(idx);
+              }}
+              aria-label={`Go to slide ${idx + 1}`}
+              className={`transition-all duration-300 rounded-full cursor-pointer ${
+                bgIndex === idx
+                  ? 'w-6 h-2 bg-blue-500 shadow-sm'
+                  : 'w-2 h-2 bg-white/40 hover:bg-white/80'
+              }`}
+            />
+          ))}
+        </div>
       </div>
 
       {/* Bottom Blue Marquee Rectangle Block (Height 100px, Absolute Pinned to Bottom) */}

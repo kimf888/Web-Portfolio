@@ -71,7 +71,7 @@ export const ProjectModal: React.FC<ProjectModalProps> = ({
     if (!content) return null;
     if (!content.includes('##') && !content.includes('**')) {
       return (
-        <p className="text-sm text-slate-700 leading-relaxed whitespace-pre-line">
+        <p className="text-sm text-neutral-300 leading-relaxed whitespace-pre-line">
           {content}
         </p>
       );
@@ -79,21 +79,21 @@ export const ProjectModal: React.FC<ProjectModalProps> = ({
 
     const blocks = content.split('\n\n');
     return (
-      <div className="space-y-4 text-sm text-slate-700 leading-relaxed">
+      <div className="space-y-4 text-sm text-neutral-300 leading-relaxed">
         {blocks.map((block, bIdx) => {
           const trimmed = block.trim();
           if (trimmed.startsWith('## ')) {
             return (
-              <h3 key={bIdx} className="text-base font-bold text-slate-900 pt-3 pb-1 border-b border-slate-100 flex items-center gap-2">
-                <span className="w-1.5 h-3.5 bg-slate-900 rounded-xs inline-block" />
+              <h3 key={bIdx} className="text-base font-bold text-white pt-3 pb-1 border-b border-neutral-800 flex items-center gap-2">
+                <span className="w-1.5 h-3.5 bg-blue-500 rounded-xs inline-block" />
                 <span>{trimmed.replace(/^##\s+/, '')}</span>
               </h3>
             );
           }
           if (trimmed.startsWith('### ')) {
             return (
-              <h4 key={bIdx} className="text-sm font-bold text-slate-900 pt-2 flex items-center gap-2">
-                <span className="w-1.5 h-1.5 rounded-full bg-slate-900 inline-block" />
+              <h4 key={bIdx} className="text-sm font-bold text-white pt-2 flex items-center gap-2">
+                <span className="w-1.5 h-1.5 rounded-full bg-blue-400 inline-block" />
                 <span>{trimmed.replace(/^###\s+/, '')}</span>
               </h4>
             );
@@ -123,7 +123,7 @@ export const ProjectModal: React.FC<ProjectModalProps> = ({
 
   return (
     <AnimatePresence>
-      <div className="fixed inset-0 z-50 flex items-center justify-center p-4 sm:p-6 overflow-y-auto bg-slate-900/60 backdrop-blur-xs overscroll-contain">
+      <div className="fixed inset-0 z-50 flex items-center justify-center p-4 sm:p-6 overflow-y-auto bg-black/80 backdrop-blur-md overscroll-contain">
         
         {/* Modal Window Container */}
         <motion.div
@@ -131,19 +131,19 @@ export const ProjectModal: React.FC<ProjectModalProps> = ({
           animate={{ opacity: 1, scale: 1, y: 0 }}
           exit={{ opacity: 0, scale: 0.95, y: 15 }}
           transition={{ type: 'spring', stiffness: 300, damping: 25 }}
-          className="bg-white w-full max-w-4xl border border-slate-200 shadow-2xl overflow-hidden my-8 flex flex-col max-h-[90vh] overscroll-contain"
+          className="bg-neutral-900 text-white w-full max-w-4xl border border-neutral-800 shadow-2xl overflow-hidden my-8 flex flex-col max-h-[90vh] overscroll-contain"
         >
           {/* Top Header Bar */}
-          <div className="px-5 py-4 bg-slate-50 border-b border-slate-200 flex flex-wrap items-center justify-between gap-3 shrink-0">
+          <div className="px-5 py-4 bg-neutral-950 border-b border-neutral-800 flex flex-wrap items-center justify-between gap-3 shrink-0">
             {/* Tab Toggle Controls (Moved to left) */}
             <div className="flex items-center gap-2.5 min-w-0">
-              <div className="flex items-center p-1 bg-slate-200/70 border border-slate-200">
+              <div className="flex items-center p-1 bg-neutral-900 border border-neutral-800 rounded">
                 <button
                   onClick={() => setActiveTab('images')}
-                  className={`flex items-center gap-1.5 px-3 py-1.5 text-xs font-semibold font-mono transition-all ${
+                  className={`flex items-center gap-1.5 px-3 py-1.5 text-xs font-semibold font-mono rounded transition-all ${
                     activeTab === 'images'
-                      ? 'bg-white text-slate-900 shadow-xs'
-                      : 'text-slate-600 hover:text-slate-900'
+                      ? 'bg-neutral-800 text-white shadow-xs'
+                      : 'text-neutral-400 hover:text-white'
                   }`}
                 >
                   {project.iframeUrl ? (
@@ -161,10 +161,10 @@ export const ProjectModal: React.FC<ProjectModalProps> = ({
                 </button>
                 <button
                   onClick={() => setActiveTab('desc')}
-                  className={`flex items-center gap-1.5 px-3 py-1.5 text-xs font-semibold font-mono transition-all ${
+                  className={`flex items-center gap-1.5 px-3 py-1.5 text-xs font-semibold font-mono rounded transition-all ${
                     activeTab === 'desc'
-                      ? 'bg-white text-slate-900 shadow-xs'
-                      : 'text-slate-600 hover:text-slate-900'
+                      ? 'bg-neutral-800 text-white shadow-xs'
+                      : 'text-neutral-400 hover:text-white'
                   }`}
                 >
                   <FileText className="w-3.5 h-3.5" style={{ color: activeTab === 'desc' ? accentHex : undefined }} />
@@ -180,7 +180,7 @@ export const ProjectModal: React.FC<ProjectModalProps> = ({
                   href={project.iframeUrl}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="flex items-center gap-1.5 px-3 py-1.5 bg-[#2563EB] hover:bg-blue-600 text-white transition-colors text-xs font-semibold shadow-xs"
+                  className="flex items-center gap-1.5 px-3 py-1.5 bg-[#2563EB] hover:bg-blue-600 text-white transition-colors text-xs font-semibold shadow-xs rounded"
                 >
                   <ExternalLink className="w-3.5 h-3.5" />
                   <span>
@@ -194,17 +194,17 @@ export const ProjectModal: React.FC<ProjectModalProps> = ({
               {/* 关闭案例 Button */}
               <button
                 onClick={onClose}
-                className="flex items-center gap-1.5 px-3 py-1.5 bg-white border border-slate-200 text-slate-700 hover:bg-slate-100 transition-colors text-xs font-semibold shadow-2xs"
+                className="flex items-center gap-1.5 px-3 py-1.5 bg-neutral-900 border border-neutral-750 text-neutral-300 hover:bg-neutral-800 hover:text-white transition-colors text-xs font-semibold shadow-2xs rounded"
                 aria-label={t.closeCase[lang]}
               >
                 <span>{t.closeCase[lang]}</span>
-                <X className="w-4 h-4 text-slate-500" />
+                <X className="w-4 h-4 text-neutral-400" />
               </button>
             </div>
           </div>
 
           {/* Modal Content Area */}
-          <div className={`overflow-y-auto flex-1 ${activeTab === 'images' ? '' : 'p-6 space-y-6'}`}>
+          <div className={`overflow-y-auto flex-1 ${activeTab === 'images' ? 'bg-black' : 'bg-neutral-900 p-6 space-y-6'}`}>
             
             {/* VIEW 1: 图片展示 / 飞书幻灯片展示 */}
             {activeTab === 'images' && (
@@ -296,14 +296,14 @@ export const ProjectModal: React.FC<ProjectModalProps> = ({
                 
                 {/* Title & Tagline Banner */}
                 <div className="space-y-2">
-                  <h2 className="text-xl sm:text-2xl font-extrabold text-slate-900">
+                  <h2 className="text-xl sm:text-2xl font-extrabold text-white">
                     {project.title}
                   </h2>
                 </div>
 
                 {/* Detailed Overview */}
                 <div className="space-y-2">
-                  <h4 className="text-xs font-mono font-bold text-slate-900 uppercase tracking-wider flex items-center gap-1.5">
+                  <h4 className="text-xs font-mono font-bold text-white uppercase tracking-wider flex items-center gap-1.5">
                     <span className="w-2 h-2" style={{ backgroundColor: accentHex }} />
                     <span>{t.overview[lang]}</span>
                   </h4>
@@ -311,12 +311,12 @@ export const ProjectModal: React.FC<ProjectModalProps> = ({
                 </div>
 
                 {/* Tags / Keywords */}
-                <div className="space-y-2 pt-2 border-t border-slate-100">
+                <div className="space-y-2 pt-2 border-t border-neutral-800">
                   <div className="flex flex-wrap items-center gap-2">
                     {project.tags.map((tag) => (
                       <span
                         key={tag}
-                        className="text-slate-500 text-xs font-mono hover:text-slate-800 transition-colors cursor-default"
+                        className="text-neutral-400 text-xs font-mono hover:text-white transition-colors cursor-default"
                       >
                         #{tag}
                       </span>
