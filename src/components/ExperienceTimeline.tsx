@@ -36,8 +36,8 @@ interface CareerItem {
 const careerList: CareerItem[] = [
   {
     id: 'c-1',
-    startDate: '2025.07',
-    endDate: 'NOW',
+    startDate: '2024.10',
+    endDate: '2026.08.31',
     company: {
       'zh-CN': '深圳市迭代创新科技有限公司',
       'zh-TW': '深圳市迭代創新科技有限公司',
@@ -52,26 +52,6 @@ const careerList: CareerItem[] = [
       'zh-CN': '产品：升降桌 / 智能家具茶几',
       'zh-TW': '產品：升降桌 / 智能家具茶几',
       en: 'Products: Standing Desk / Smart Coffee Table',
-    },
-  },
-  {
-    id: 'c-2',
-    startDate: '2024.10',
-    endDate: '2025.06',
-    company: {
-      'zh-CN': '深圳睿丰和电子商务有限公司',
-      'zh-TW': '深圳睿豐和電子商務有限公司',
-      en: 'Shenzhen Ruifenghe E-Commerce Co., Ltd.',
-    },
-    description: {
-      'zh-CN': '视觉设计师',
-      'zh-TW': '視覺設計師',
-      en: 'Visual Designer',
-    },
-    products: {
-      'zh-CN': '产品：音乐架 / 延长线 / 露营灯 / 太阳能灯 / 门闭器 / 触摸灯',
-      'zh-TW': '產品：音樂架 / 延長線 / 露營燈 / 太陽能燈 / 門閉器 / 觸摸燈',
-      en: 'Products: Music Stand / Extension Cord / Camping Light / Solar Light / Door Closer / Touch Light',
     },
   },
   {

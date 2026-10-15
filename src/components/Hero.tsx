@@ -9,11 +9,11 @@ interface HeroProps {
 }
 
 const heroBackgroundImages = [
-  'https://i.ibb.co/0VqXxk4g/1.png',
-  'https://i.ibb.co/JR1ydc0X/1.png',
-  'https://i.ibb.co/B2yfsPz8/2.png',
-  'https://i.ibb.co/SDhkB3j5/3.png',
-  'https://i.ibb.co/Qjb8Cg2T/4.png',
+  'https://i.ibb.co/jkYW2SWZ/1.png',
+  'https://i.ibb.co/LDfY73F7/2.png',
+  'https://i.ibb.co/F4d3YfYk/3.png',
+  'https://i.ibb.co/SXJJJG4V/4.png',
+  'https://i.ibb.co/dwxfBPLN/5.png',
 ];
 
 interface HeroSlideData {
@@ -25,26 +25,60 @@ interface HeroSlideData {
 const heroSlides: HeroSlideData[] = [
   {
     tag: {
-      'zh-CN': '01 · 母婴健康与纯净守护',
-      'zh-TW': '01 · 母嬰健康與純淨守護',
-      en: '01 · Pure Care & Healthy Living',
+      'zh-CN': '01 · 庭院生态与智能割草',
+      'zh-TW': '01 · 庭院生態與智能割草',
+      en: '01 · Smart Garden & Eco Living',
     },
     title: {
-      'zh-CN': '安心洁净，守护孩童自在空间',
-      'zh-TW': '安心潔淨，守護孩童自在空間',
-      en: 'Pure & Clean, Nurturing Children\'s Space',
+      'zh-CN': '智护庭院，自在生长',
+      'zh-TW': '智護庭院，自在生長',
+      en: 'Smart Garden Care, Growing Naturally',
     },
     subtitle: {
-      'zh-CN': '母婴级全维深度洁净，为孩子打造自由探索的纯净天地',
-      'zh-TW': '母嬰級全維深度潔淨，為孩子打造自由探索的純淨天地',
-      en: 'Maternal-grade deep sanitation, creating a safe world for kids to explore',
+      'zh-CN': '无人智能割草机与户外智能生态科技，重塑现代庭院惬意生活',
+      'zh-TW': '無人智能割草機與戶外智能生態科技，重塑現代庭院愜意生活',
+      en: 'Robotic lawn mower & outdoor smart eco-tech for tranquil modern living',
     },
   },
   {
     tag: {
-      'zh-CN': '02 · 电竞工坊与沉浸空间',
-      'zh-TW': '02 · 電競工坊與沉浸空間',
-      en: '02 · Esports Workstation & Performance',
+      'zh-CN': '02 · 重塑强悍性能 · Intel i5',
+      'zh-TW': '02 · 重塑強悍性能 · Intel i5',
+      en: '02 · Performance Redefined',
+    },
+    title: {
+      'zh-CN': 'Performance Redefined',
+      'zh-TW': 'Performance Redefined',
+      en: 'Performance Redefined',
+    },
+    subtitle: {
+      'zh-CN': '12th Gen Intel Core i5 i5-12400, Drive Your Workstation',
+      'zh-TW': '12th Gen Intel Core i5 i5-12400, Drive Your Workstation',
+      en: '12th Gen Intel Core i5 i5-12400, Drive Your Workstation',
+    },
+  },
+  {
+    tag: {
+      'zh-CN': '03 · 图解安装与调试指南',
+      'zh-TW': '03 · 圖解安裝與調試指南',
+      en: '03 · Visual Assembly & Setup Guide',
+    },
+    title: {
+      'zh-CN': '开箱即装，一步到位',
+      'zh-TW': '開箱即裝，一步到位',
+      en: 'Out of the Box, One-Step Setup',
+    },
+    subtitle: {
+      'zh-CN': '分步图解式说明与部件结构拆解，助力快速完成产品组装调试',
+      'zh-TW': '分步圖解式說明與部件結構拆解，助力快速完成產品組裝調試',
+      en: 'Step-by-step visual guides & component breakdown for effortless assembly',
+    },
+  },
+  {
+    tag: {
+      'zh-CN': '04 · 电竞工坊与沉浸空间',
+      'zh-TW': '04 · 電競工坊與沉浸空間',
+      en: '04 · Esports Workstation & Performance',
     },
     title: {
       'zh-CN': '重构高效电竞工作空间',
@@ -59,53 +93,19 @@ const heroSlides: HeroSlideData[] = [
   },
   {
     tag: {
-      'zh-CN': '03 · 派对聚会与极速制冷',
-      'zh-TW': '03 · 派對聚會與極速制冷',
-      en: '03 · Instant Chill & Social Moments',
+      'zh-CN': '05 · 母婴健康与纯净守护',
+      'zh-TW': '05 · 母嬰健康與純淨守護',
+      en: '05 · Pure Care & Healthy Living',
     },
     title: {
-      'zh-CN': '欢聚时刻，冰爽触手可及',
-      'zh-TW': '歡聚時刻，冰爽觸手可及',
-      en: 'Gathering Moments, Instant Refreshing Chill',
+      'zh-CN': '安心洁净，守护孩童自在空间',
+      'zh-TW': '安心潔淨，守護孩童自在空間',
+      en: 'Pure & Clean, Nurturing Children\'s Space',
     },
     subtitle: {
-      'zh-CN': '极速强劲制冷与便捷取冰，点亮每一个派对与畅饮时光',
-      'zh-TW': '極速強勁制冷與便捷取冰，點亮每一個派對與暢飲時光',
-      en: 'Rapid cooling & effortless ice making to elevate every social moment',
-    },
-  },
-  {
-    tag: {
-      'zh-CN': '04 · 图解安装与调试',
-      'zh-TW': '04 · 圖解安裝與調試',
-      en: '04 · Visual Assembly & Setup',
-    },
-    title: {
-      'zh-CN': '开箱即装，一步到位',
-      'zh-TW': '開箱即裝，一步到位',
-      en: 'Out of the Box, One-Step Setup',
-    },
-    subtitle: {
-      'zh-CN': '分步图解式说明，助力快速完成产品组装调试',
-      'zh-TW': '分步圖解式說明，助力快速完成產品組裝調試',
-      en: 'Step-by-step visual guides for effortless assembly and calibration',
-    },
-  },
-  {
-    tag: {
-      'zh-CN': '05 · AIGC-创意 · 庭院生态与智能护理',
-      'zh-TW': '05 · AIGC-創意 · 庭院生態與智能護理',
-      en: '05 · AIGC Creative · Smart Garden & Eco Living',
-    },
-    title: {
-      'zh-CN': '智护庭院，自在生长',
-      'zh-TW': '智護庭院，自在生長',
-      en: 'Smart Garden Care, Growing Naturally',
-    },
-    subtitle: {
-      'zh-CN': 'AIGC-创意｜无人割草机与户外智能生态科技，重塑现代庭院惬意生活',
-      'zh-TW': 'AIGC-創意｜無人割草機與戶外智能生態科技，重塑現代庭院愜意生活',
-      en: 'AIGC Creative | Robotic lawn mower & outdoor smart eco-tech for tranquil modern living',
+      'zh-CN': '母婴级全维深度洁净，为孩子打造自由探索的纯净天地',
+      'zh-TW': '母嬰級全維深度潔淨，為孩子打造自由探索的純淨天地',
+      en: 'Maternal-grade deep sanitation, creating a safe world for kids to explore',
     },
   },
   {
@@ -230,18 +230,27 @@ export const Hero: React.FC<HeroProps> = ({ lang, accentHex }) => {
               className="w-full h-full object-cover object-center pointer-events-none select-none"
             />
 
-            {/* Slide Topic / Creative Badge Overlay */}
-            <div className="absolute top-6 left-6 sm:top-8 sm:left-8 z-10 flex flex-col gap-1.5 max-w-lg pointer-events-none select-none">
-              <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-black/60 backdrop-blur-md border border-white/20 text-white font-mono text-xs font-semibold w-max shadow-lg">
-                <span className="w-2 h-2 rounded-full bg-blue-500 animate-pulse" />
-                <span>{heroSlides[bgIndex]?.tag[lang] || heroSlides[0].tag[lang]}</span>
+            {/* Slide 2: 垂直居中、靠左排版 (Vertically Centered, Left Aligned) */}
+            {bgIndex === 1 && (
+              <div className="absolute left-16 sm:left-24 md:left-28 lg:left-32 top-[calc(50%-50px)] -translate-y-1/2 z-10 flex flex-col gap-2.5 sm:gap-3.5 max-w-xl lg:max-w-2xl text-left pointer-events-none select-none">
+                <h1 className="text-3xl sm:text-5xl md:text-6xl font-black text-white tracking-tight leading-[1.12] drop-shadow-[0_4px_24px_rgba(0,0,0,0.9)] font-sans">
+                  Performance Redefined
+                </h1>
+                <p className="text-sm sm:text-base md:text-lg text-white/90 font-medium tracking-wide drop-shadow-[0_2px_12px_rgba(0,0,0,0.95)] max-w-lg leading-relaxed">
+                  12th Gen Intel Core i5 i5-12400, Drive Your Workstation
+                </p>
               </div>
-              {bgIndex === 4 && (
-                <div className="text-white/90 text-xs sm:text-sm font-medium drop-shadow-md bg-black/40 backdrop-blur-xs px-3 py-1 rounded-md border border-white/10 w-max">
-                  {lang === 'en' ? 'Robotic Mower · AIGC Creative' : '无人智能割草机 · AIGC-创意'}
+            )}
+
+            {/* Other Slides Topic / Creative Badge Overlay (Top Left) */}
+            {bgIndex !== 1 && (
+              <div className="absolute top-6 left-6 sm:top-8 sm:left-8 z-10 flex flex-col gap-1.5 max-w-lg pointer-events-none select-none">
+                <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-black/60 backdrop-blur-md border border-white/20 text-white font-mono text-xs font-semibold w-max shadow-lg">
+                  <span className="w-2 h-2 rounded-full bg-blue-500 animate-pulse" />
+                  <span>{heroSlides[bgIndex]?.tag[lang] || heroSlides[0].tag[lang]}</span>
                 </div>
-              )}
-            </div>
+              </div>
+            )}
           </motion.div>
         </AnimatePresence>
       </div>
