@@ -10,7 +10,7 @@ interface HeroProps {
 
 const heroBackgroundImages = [
   'https://i.ibb.co/jkYW2SWZ/1.png',
-  'https://i.ibb.co/LDfY73F7/2.png',
+  'https://i.ibb.co/sJX2Yzry/2.png',
   'https://i.ibb.co/F4d3YfYk/3.png',
   'https://i.ibb.co/SXJJJG4V/4.png',
   'https://i.ibb.co/dwxfBPLN/5.png',
